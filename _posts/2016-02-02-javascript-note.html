@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>javascript.html</title>
+  <meta name="generator" content="Haroopad 0.13.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>div.oembedall-githubrepos{border:1px solid #DDD;border-radius:4px;list-style-type:none;margin:0 0 10px;padding:8px 10px 0;font:13.34px/1.4 helvetica,arial,freesans,clean,sans-serif;width:452px;background-color:#fff}div.oembedall-githubrepos .oembedall-body{background:-moz-linear-gradient(center top,#FAFAFA,#EFEFEF);background:-webkit-gradient(linear,left top,left bottom,from(#FAFAFA),to(#EFEFEF));border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-top:1px solid #EEE;margin-left:-10px;margin-top:8px;padding:5px 10px;width:100%}div.oembedall-githubrepos h3{font-size:14px;margin:0;padding-left:18px;white-space:nowrap}div.oembedall-githubrepos p.oembedall-description{color:#444;font-size:12px;margin:0 0 3px}div.oembedall-githubrepos p.oembedall-updated-at{color:#888;font-size:11px;margin:0}div.oembedall-githubrepos ul.oembedall-repo-stats{border:none;float:right;font-size:11px;font-weight:700;padding-left:15px;position:relative;z-index:5;margin:0}div.oembedall-githubrepos ul.oembedall-repo-stats li{border:none;color:#666;display:inline-block;list-style-type:none;margin:0!important}div.oembedall-githubrepos ul.oembedall-repo-stats li a{background-color:transparent;border:none;color:#666!important;background-position:5px -2px;background-repeat:no-repeat;border-left:1px solid #DDD;display:inline-block;height:21px;line-height:21px;padding:0 5px 0 23px}div.oembedall-githubrepos ul.oembedall-repo-stats li:first-child a{border-left:medium none;margin-right:-3px}div.oembedall-githubrepos ul.oembedall-repo-stats li a:hover{background:5px -27px no-repeat #4183C4;color:#FFF!important;text-decoration:none}div.oembedall-githubrepos ul.oembedall-repo-stats li:first-child a:hover{border-bottom-left-radius:3px;border-top-left-radius:3px}ul.oembedall-repo-stats li:last-child a:hover{border-bottom-right-radius:3px;border-top-right-radius:3px}span.oembedall-closehide{background-color:#aaa;border-radius:2px;cursor:pointer;margin-right:3px}div.oembedall-container{margin-top:5px;text-align:left}.oembedall-ljuser{font-weight:700}.oembedall-ljuser img{vertical-align:bottom;border:0;padding-right:1px}.oembedall-stoqembed{border-bottom:1px dotted #999;float:left;overflow:hidden;width:730px;line-height:1;background:#FFF;color:#000;font-family:Arial,Liberation Sans,DejaVu Sans,sans-serif;font-size:80%;text-align:left;margin:0;padding:0}.oembedall-stoqembed a{color:#07C;text-decoration:none;margin:0;padding:0}.oembedall-stoqembed a:hover{text-decoration:underline}.oembedall-stoqembed a:visited{color:#4A6B82}.oembedall-stoqembed h3{font-family:Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;font-size:130%;font-weight:700;margin:0;padding:0}.oembedall-stoqembed .oembedall-reputation-score{color:#444;font-size:120%;font-weight:700;margin-right:2px}.oembedall-stoqembed .oembedall-user-info{height:35px;width:185px}.oembedall-stoqembed .oembedall-user-info .oembedall-user-gravatar32{float:left;height:32px;width:32px}.oembedall-stoqembed .oembedall-user-info .oembedall-user-details{float:left;margin-left:5px;overflow:hidden;white-space:nowrap;width:145px}.oembedall-stoqembed .oembedall-question-hyperlink{font-weight:700}.oembedall-stoqembed .oembedall-stats{background:#EEE;margin:0 0 0 7px;padding:4px 7px 6px;width:58px}.oembedall-stoqembed .oembedall-statscontainer{float:left;margin-right:8px;width:86px}.oembedall-stoqembed .oembedall-votes{color:#555;padding:0 0 7px;text-align:center}.oembedall-stoqembed .oembedall-vote-count-post{font-size:240%;color:#808185;display:block;font-weight:700}.oembedall-stoqembed .oembedall-views{color:#999;padding-top:4px;text-align:center}.oembedall-stoqembed .oembedall-status{margin-top:-3px;padding:4px 0;text-align:center;background:#75845C;color:#FFF}.oembedall-stoqembed .oembedall-status strong{color:#FFF;display:block;font-size:140%}.oembedall-stoqembed .oembedall-summary{float:left;width:635px}.oembedall-stoqembed .oembedall-excerpt{line-height:1.2;margin:0;padding:0 0 5px}.oembedall-stoqembed .oembedall-tags{float:left;line-height:18px}.oembedall-stoqembed .oembedall-tags a:hover{text-decoration:none}.oembedall-stoqembed .oembedall-post-tag{background-color:#E0EAF1;border-bottom:1px solid #3E6D8E;border-right:1px solid #7F9FB6;color:#3E6D8E;font-size:90%;line-height:2.4;margin:2px 2px 2px 0;padding:3px 4px;text-decoration:none;white-space:nowrap}.oembedall-stoqembed .oembedall-post-tag:hover{background-color:#3E6D8E;border-bottom:1px solid #37607D;border-right:1px solid #37607D;color:#E0EAF1}.oembedall-stoqembed .oembedall-fr{float:right}.oembedall-stoqembed .oembedall-statsarrow{background-image:url(http://cdn.sstatic.net/stackoverflow/img/sprites.png?v=3);background-repeat:no-repeat;overflow:hidden;background-position:0 -435px;float:right;height:13px;margin-top:12px;width:7px}.oembedall-facebook1{border:1px solid #1A3C6C;padding:0;font:13.34px/1.4 verdana;width:500px}.oembedall-facebook2{background-color:#627add}.oembedall-facebook2 a{color:#e8e8e8;text-decoration:none}.oembedall-facebookBody{background-color:#fff;vertical-align:top;padding:5px}.oembedall-facebookBody .contents{display:inline-block;width:100%}.oembedall-facebookBody div img{float:left;margin-right:5px}div.oembedall-lanyard{-webkit-box-shadow:none;-webkit-transition-delay:0s;-webkit-transition-duration:.4000000059604645s;-webkit-transition-property:width;-webkit-transition-timing-function:cubic-bezier(0.42,0,.58,1);background-attachment:scroll;background-clip:border-box;background-color:transparent;background-image:none;background-origin:padding-box;border-width:0;box-shadow:none;color:#112644;display:block;float:left;font-family:'Trebuchet MS',Trebuchet,sans-serif;font-size:16px;height:253px;line-height:19px;margin:0;max-width:none;min-height:0;outline:#112644 0;overflow-x:visible;overflow-y:visible;padding:0;position:relative;text-align:left;vertical-align:baseline;width:804px}div.oembedall-lanyard .tagline{font-size:1.5em}div.oembedall-lanyard .wrapper{overflow:hidden;clear:both}div.oembedall-lanyard .split{float:left;display:inline}div.oembedall-lanyard .prominent-place .flag:active,div.oembedall-lanyard .prominent-place .flag:focus,div.oembedall-lanyard .prominent-place .flag:hover,div.oembedall-lanyard .prominent-place .flag:link,div.oembedall-lanyard .prominent-place .flag:visited{float:left;display:block;width:48px;height:48px;position:relative;top:-5px;margin-right:10px}div.oembedall-lanyard .place-context{font-size:.889em}div.oembedall-lanyard .prominent-place .sub-place{display:block}div.oembedall-lanyard .prominent-place{font-size:1.125em;line-height:1.1em;font-weight:400}div.oembedall-lanyard .main-date{color:#8CB4E0;font-weight:700;line-height:1.1}div.oembedall-lanyard .first{width:48.57%;margin:0 0 0 2.857%}.mermaid .label{color:#333}.node circle,.node polygon,.node rect{fill:#cde498;stroke:#13540c;stroke-width:1px}.edgePath .path{stroke:green;stroke-width:1.5px}.cluster rect{fill:#cdffb2;rx:40;stroke:#6eaa49;stroke-width:1px}.cluster text{fill:#333}.actor{stroke:#13540c;fill:#cde498}text.actor{fill:#000;stroke:none}.actor-line{stroke:grey}.messageLine0{stroke-width:1.5;stroke-dasharray:"2 2";marker-end:"url(#arrowhead)";stroke:#333}.messageLine1{stroke-width:1.5;stroke-dasharray:"2 2";stroke:#333}#arrowhead{fill:#333}#crosshead path{fill:#333!important;stroke:#333!important}.messageText{fill:#333;stroke:none}.labelBox{stroke:#326932;fill:#cde498}.labelText,.loopText{fill:#000;stroke:none}.loopLine{stroke-width:2;stroke-dasharray:"2 2";marker-end:"url(#arrowhead)";stroke:#326932}.note{stroke:#6eaa49;fill:#fff5ad}.noteText{fill:#000;stroke:none;font-family:'trebuchet ms',verdana,arial;font-size:14px}.section{stroke:none;opacity:.2}.section0,.section2{fill:#6eaa49}.section1,.section3{fill:#fff;opacity:.2}.sectionTitle0,.sectionTitle1,.sectionTitle2,.sectionTitle3{fill:#333}.sectionTitle{text-anchor:start;font-size:11px;text-height:14px}.grid .tick{stroke:lightgrey;opacity:.3;shape-rendering:crispEdges}.grid path{stroke-width:0}.today{fill:none;stroke:red;stroke-width:2px}.task{stroke-width:2}.taskText{text-anchor:middle;font-size:11px}.taskTextOutsideRight{fill:#000;text-anchor:start;font-size:11px}.taskTextOutsideLeft{fill:#000;text-anchor:end;font-size:11px}.taskText0,.taskText1,.taskText2,.taskText3{fill:#fff}.task0,.task1,.task2,.task3{fill:#487e3a;stroke:#13540c}.taskTextOutside0,.taskTextOutside1,.taskTextOutside2,.taskTextOutside3{fill:#000}.active0,.active1,.active2,.active3{fill:#cde498;stroke:#13540c}.activeText0,.activeText1,.activeText2,.activeText3{fill:#000!important}.done0,.done1,.done2,.done3{stroke:grey;fill:lightgrey;stroke-width:2}.doneText0,.doneText1,.doneText2,.doneText3{fill:#000!important}.crit0,.crit1,.crit2,.crit3{stroke:#f88;fill:red;stroke-width:2}.activeCrit0,.activeCrit1,.activeCrit2,.activeCrit3{stroke:#f88;fill:#cde498;stroke-width:2}.doneCrit0,.doneCrit1,.doneCrit2,.doneCrit3{stroke:#f88;fill:lightgrey;stroke-width:2;cursor:pointer;shape-rendering:crispEdges}.activeCritText0,.activeCritText1,.activeCritText2,.activeCritText3,.doneCritText0,.doneCritText1,.doneCritText2,.doneCritText3{fill:#000!important}.titleText{text-anchor:middle;font-size:18px;fill:#000}text{font-family:'trebuchet ms',verdana,arial;font-size:14px}html{height:100%}body{margin:0!important;padding:5px 20px 26px!important;background-color:#fff;font-family:"Lucida Grande","Segoe UI","Apple SD Gothic Neo","Malgun Gothic","Lucida Sans Unicode",Helvetica,Arial,sans-serif;font-size:.9em;overflow-x:hidden;overflow-y:auto}br,h1,h2,h3,h4,h5,h6{clear:both}hr.page{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x;border:0;height:3px;padding:0}hr.underscore{border-top-style:dashed!important}body >:first-child{margin-top:0!important}img.plugin{box-shadow:0 1px 3px rgba(0,0,0,.1);border-radius:3px}iframe{border:0}figure{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0}kbd{border:1px solid #aaa;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;-moz-box-shadow:1px 2px 2px #ddd;-webkit-box-shadow:1px 2px 2px #ddd;box-shadow:1px 2px 2px #ddd;background-color:#f9f9f9;background-image:-moz-linear-gradient(top,#eee,#f9f9f9,#eee);background-image:-o-linear-gradient(top,#eee,#f9f9f9,#eee);background-image:-webkit-linear-gradient(top,#eee,#f9f9f9,#eee);background-image:linear-gradient(top,#eee,#f9f9f9,#eee);padding:1px 3px;font-family:inherit;font-size:.85em}.oembeded .oembed_photo{display:inline-block}img[data-echo]{margin:25px 0;width:100px;height:100px;background:url(../img/ajax.gif) center center no-repeat #fff}.spinner{display:inline-block;width:10px;height:10px;margin-bottom:-.1em;border:2px solid rgba(0,0,0,.5);border-top-color:transparent;border-radius:100%;-webkit-animation:spin 1s infinite linear;animation:spin 1s infinite linear}.spinner:after{content:'';display:block;width:0;height:0;position:absolute;top:-6px;left:0;border:4px solid transparent;border-bottom-color:rgba(0,0,0,.5);-webkit-transform:rotate(45deg);transform:rotate(45deg)}@-webkit-keyframes spin{to{-webkit-transform:rotate(360deg)}}@keyframes spin{to{transform:rotate(360deg)}}p.toc{margin:0!important}p.toc ul{padding-left:10px}p.toc>ul{padding:10px;margin:0 10px;display:inline-block;border:1px solid #ededed;border-radius:5px}p.toc li,p.toc ul{list-style-type:none}p.toc li{width:100%;padding:0;overflow:hidden}p.toc li a::after{content:"."}p.toc li a:before{content:"• "}p.toc h5{text-transform:uppercase}p.toc .title{float:left;padding-right:3px}p.toc .number{margin:0;float:right;padding-left:3px;background:#fff;display:none}input.task-list-item{margin-left:-1.62em}.markdown{font-family:"Hiragino Sans GB","Microsoft YaHei",STHeiti,SimSun,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",'Segoe UI',AppleSDGothicNeo-Medium,'Malgun Gothic',Verdana,Tahoma,sans-serif;padding:20px}.markdown a{text-decoration:none;vertical-align:baseline}.markdown a:hover{text-decoration:underline}.markdown h1{font-size:2.2em;font-weight:700;margin:1.5em 0 1em}.markdown h2{font-size:1.8em;font-weight:700;margin:1.275em 0 .85em}.markdown h3{font-size:1.6em;font-weight:700;margin:1.125em 0 .75em}.markdown h4{font-size:1.4em;font-weight:700;margin:.99em 0 .66em}.markdown h5{font-size:1.2em;font-weight:700;margin:.855em 0 .57em}.markdown h6{font-size:1em;font-weight:700;margin:.75em 0 .5em}.markdown h1+p,.markdown h1:first-child,.markdown h2+p,.markdown h2:first-child,.markdown h3+p,.markdown h3:first-child,.markdown h4+p,.markdown h4:first-child,.markdown h5+p,.markdown h5:first-child,.markdown h6+p,.markdown h6:first-child{margin-top:0}.markdown hr{border:1px solid #ccc}.markdown p{margin:1em 0;word-wrap:break-word}.markdown ol{list-style-type:decimal}.markdown li{display:list-item;line-height:1.4em}.markdown blockquote{margin:1em 20px}.markdown blockquote>:first-child{margin-top:0}.markdown blockquote>:last-child{margin-bottom:0}.markdown blockquote cite:before{content:'\2014 \00A0'}.markdown .code{border-radius:3px;word-wrap:break-word}.markdown pre{border-radius:3px;word-wrap:break-word;border:1px solid #ccc;overflow:auto;padding:.5em}.markdown pre code{border:0;display:block}.markdown pre>code{font-family:Consolas,Inconsolata,Courier,monospace;font-weight:700;white-space:pre;margin:0}.markdown code{border-radius:3px;word-wrap:break-word;border:1px solid #ccc;padding:0 5px;margin:0 2px}.markdown img{max-width:100%}.markdown mark{color:#000;background-color:#fcf8e3}.markdown table{padding:0;border-collapse:collapse;border-spacing:0;margin-bottom:16px}.markdown table tr td,.markdown table tr th{border:1px solid #ccc;margin:0;padding:6px 13px}.markdown table tr th{font-weight:700}.markdown table tr th>:first-child{margin-top:0}.markdown table tr th>:last-child{margin-bottom:0}.markdown table tr td>:first-child{margin-top:0}.markdown table tr td>:last-child{margin-bottom:0}.solarized-dark{padding:20px;color:#839496;font-size:15px;background:#002b36;-webkit-font-smoothing:antialiased}.solarized-dark a{color:#1e6ea7}.solarized-dark a:hover{color:#268bd2}.solarized-dark h1,.solarized-dark h2,.solarized-dark h3,.solarized-dark h4,.solarized-dark h5{color:#b58900}.solarized-dark h2{border-bottom:1px solid #003f50;line-height:1.7em}.solarized-dark h6{color:#694f00}.solarized-dark hr{border:1px solid #001f27}.solarized-dark code,.solarized-dark pre{border:1px solid #00475a}.solarized-dark pre>code{font-size:.9em}.solarized-dark blockquote{border-left:4px solid #005469;padding:0 15px;font-style:italic}.solarized-dark table{background-color:#003441}.solarized-dark table tr td,.solarized-dark table tr th{border:1px solid #005065}.solarized-dark table tr:nth-child(2n){background-color:#003b4b}.hljs{display:block;overflow-x:auto;padding:.5em;background:#fdf6e3;color:#657b83;-webkit-text-size-adjust:none}.diff .hljs-header,.hljs-comment,.hljs-doctype,.hljs-javadoc,.hljs-pi,.lisp .hljs-string{color:#93a1a1}.css .hljs-tag,.hljs-addition,.hljs-keyword,.hljs-request,.hljs-status,.hljs-winutils,.method,.nginx .hljs-title{color:#859900}.hljs-command,.hljs-dartdoc,.hljs-hexcolor,.hljs-link_url,.hljs-number,.hljs-phpdoc,.hljs-regexp,.hljs-rules .hljs-value,.hljs-string,.hljs-tag .hljs-value,.tex .hljs-formula{color:#2aa198}.css .hljs-function,.hljs-built_in,.hljs-chunk,.hljs-decorator,.hljs-id,.hljs-identifier,.hljs-localvars,.hljs-title,.vhdl .hljs-literal{color:#268bd2}.hljs-attribute,.hljs-class .hljs-title,.hljs-constant,.hljs-link_reference,.hljs-parent,.hljs-type,.hljs-variable,.lisp .hljs-body,.smalltalk .hljs-number{color:#b58900}.css .hljs-pseudo,.diff .hljs-change,.hljs-attr_selector,.hljs-cdata,.hljs-header,.hljs-pragma,.hljs-preprocessor,.hljs-preprocessor .hljs-keyword,.hljs-shebang,.hljs-special,.hljs-subst,.hljs-symbol,.hljs-symbol .hljs-string{color:#cb4b16}.hljs-deletion,.hljs-important{color:#dc322f}.hljs-link_label{color:#6c71c4}.tex .hljs-formula{background:#eee8d5}.MathJax_Hover_Frame{border-radius:.25em;-webkit-border-radius:.25em;-moz-border-radius:.25em;-khtml-border-radius:.25em;box-shadow:0 0 15px #83A;-webkit-box-shadow:0 0 15px #83A;-moz-box-shadow:0 0 15px #83A;-khtml-box-shadow:0 0 15px #83A;border:1px solid #A6D!important;display:inline-block;position:absolute}.MathJax_Hover_Arrow{position:absolute;width:15px;height:11px;cursor:pointer}#MathJax_About{position:fixed;left:50%;width:auto;text-align:center;border:3px outset;padding:1em 2em;background-color:#DDD;color:#000;cursor:default;font-family:message-box;font-size:120%;font-style:normal;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;z-index:201;border-radius:15px;-webkit-border-radius:15px;-moz-border-radius:15px;-khtml-border-radius:15px;box-shadow:0 10px 20px gray;-webkit-box-shadow:0 10px 20px gray;-moz-box-shadow:0 10px 20px gray;-khtml-box-shadow:0 10px 20px gray;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}.MathJax_Menu{position:absolute;background-color:#fff;color:#000;width:auto;padding:5px 0;border:1px solid #CCC;margin:0;cursor:default;font:menu;text-align:left;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;z-index:201;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;-khtml-border-radius:5px;box-shadow:0 10px 20px gray;-webkit-box-shadow:0 10px 20px gray;-moz-box-shadow:0 10px 20px gray;-khtml-box-shadow:0 10px 20px gray;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}.MathJax_MenuItem{padding:1px 2em;background:0 0}.MathJax_MenuArrow{position:absolute;right:.5em;color:#666}.MathJax_MenuActive .MathJax_MenuArrow{color:#fff}.MathJax_MenuArrow.RTL{left:.5em;right:auto}.MathJax_MenuCheck{position:absolute;left:.7em}.MathJax_MenuCheck.RTL{right:.7em;left:auto}.MathJax_MenuRadioCheck{position:absolute;left:.7em}.MathJax_MenuRadioCheck.RTL{right:.7em;left:auto}.MathJax_MenuLabel{padding:1px 2em 3px 1.33em;font-style:italic}.MathJax_MenuRule{border-top:1px solid #DDD;margin:4px 3px}.MathJax_MenuDisabled{color:GrayText}.MathJax_MenuActive{background-color:#606872;color:#fff}.MathJax_Menu_Close{position:absolute;width:31px;height:31px;top:-15px;left:-15px}#MathJax_Zoom{position:absolute;background-color:#F0F0F0;overflow:auto;display:block;z-index:301;padding:.5em;border:1px solid #000;margin:0;font-weight:400;font-style:normal;text-align:left;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;box-shadow:5px 5px 15px #AAA;-webkit-box-shadow:5px 5px 15px #AAA;-moz-box-shadow:5px 5px 15px #AAA;-khtml-box-shadow:5px 5px 15px #AAA;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}#MathJax_ZoomOverlay{position:absolute;left:0;top:0;z-index:300;display:inline-block;width:100%;height:100%;border:0;padding:0;margin:0;background-color:#fff;opacity:0;filter:alpha(opacity=0)}#MathJax_ZoomFrame{position:relative;display:inline-block;height:0;width:0}#MathJax_ZoomEventTrap{position:absolute;left:0;top:0;z-index:302;display:inline-block;border:0;padding:0;margin:0;background-color:#fff;opacity:0;filter:alpha(opacity=0)}.MathJax_Preview{color:#888}#MathJax_Message{position:fixed;left:1px;bottom:2px;background-color:#E6E6E6;border:1px solid #959595;margin:0;padding:2px 8px;z-index:102;color:#000;font-size:80%;width:auto;white-space:nowrap}#MathJax_MSIE_Frame{position:absolute;top:0;left:0;width:0;z-index:101;border:0;margin:0;padding:0}.MathJax_Error{color:#C00;font-style:italic}footer{position:fixed;font-size:.8em;text-align:right;bottom:0;margin-left:-25px;height:20px;width:100%}</style>
+</head>
+<body class="markdown solarized-dark">
+<p class="toc" style="undefined"></p><ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li><span class="title">
+<a href="#javascript-简介" title="JavaScript 简介">JavaScript 简介</a>
+</span>
+<!--span class="number">
+0
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-用法" title="JavaScript 用法">JavaScript 用法</a>
+</span>
+<!--span class="number">
+1
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-输出" title="JavaScript 输出">JavaScript 输出</a>
+</span>
+<!--span class="number">
+2
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-语法" title="JavaScript 语法">JavaScript 语法</a>
+</span>
+<!--span class="number">
+3
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-语句" title="JavaScript 语句">JavaScript 语句</a>
+</span>
+<!--span class="number">
+4
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-注释" title="JavaScript 注释">JavaScript 注释</a>
+</span>
+<!--span class="number">
+5
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-变量" title="JavaScript 变量">JavaScript 变量</a>
+</span>
+<!--span class="number">
+6
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-数据类型" title="JavaScript 数据类型">JavaScript 数据类型</a>
+</span>
+<!--span class="number">
+7
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-对象" title="JavaScript 对象">JavaScript 对象</a>
+</span>
+<!--span class="number">
+8
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-函数" title="JavaScript 函数">JavaScript 函数</a>
+</span>
+<!--span class="number">
+9
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-作用域" title="JavaScript 作用域">JavaScript 作用域</a>
+</span>
+<!--span class="number">
+10
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-事件" title="JavaScript 事件">JavaScript 事件</a>
+</span>
+<!--span class="number">
+11
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-字符串" title="JavaScript 字符串">JavaScript 字符串</a>
+</span>
+<!--span class="number">
+12
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-运算符" title="JavaScript 运算符">JavaScript 运算符</a>
+</span>
+<!--span class="number">
+13
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-if..else语句" title="JavaScript If..Else语句">JavaScript If..Else语句</a>
+</span>
+<!--span class="number">
+14
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-switch语句" title="JavaScript switch语句">JavaScript switch语句</a>
+</span>
+<!--span class="number">
+15
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-for循环" title="JavaScript for循环">JavaScript for循环</a>
+</span>
+<!--span class="number">
+16
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-while循环" title="JavaScript while循环">JavaScript while循环</a>
+</span>
+<!--span class="number">
+17
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-break和continue语句" title="JavaScript break和continue语句">JavaScript break和continue语句</a>
+</span>
+<!--span class="number">
+18
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-typeof,null和undefined" title="JavaScript typeof,null和undefined">JavaScript typeof,null和undefined</a>
+</span>
+<!--span class="number">
+19
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-类型转换" title="JavaScript 类型转换">JavaScript 类型转换</a>
+</span>
+<!--span class="number">
+20
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript正则表达式" title="JavaScript正则表达式">JavaScript正则表达式</a>
+</span>
+<!--span class="number">
+21
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript错误" title="JavaScript错误">JavaScript错误</a>
+</span>
+<!--span class="number">
+22
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript调试" title="JavaScript调试">JavaScript调试</a>
+</span>
+<!--span class="number">
+23
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript表单验证" title="JavaScript表单验证">JavaScript表单验证</a>
+</span>
+<!--span class="number">
+24
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-json" title="JavaScript JSON">JavaScript JSON</a>
+</span>
+<!--span class="number">
+25
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-void" title="JavaScript void">JavaScript void</a>
+</span>
+<!--span class="number">
+26
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-函数定义" title="JavaScript 函数定义">JavaScript 函数定义</a>
+</span>
+<!--span class="number">
+27
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript函数参数" title="JavaScript函数参数">JavaScript函数参数</a>
+</span>
+<!--span class="number">
+28
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript函数调用" title="JavaScript函数调用">JavaScript函数调用</a>
+</span>
+<!--span class="number">
+29
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript闭包" title="JavaScript闭包">JavaScript闭包</a>
+</span>
+<!--span class="number">
+30
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-html-dom" title="JavaScript HTML DOM">JavaScript HTML DOM</a>
+</span>
+<!--span class="number">
+31
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-改变html" title="JavaScript 改变HTML">JavaScript 改变HTML</a>
+</span>
+<!--span class="number">
+32
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-改变css" title="JavaScript 改变CSS">JavaScript 改变CSS</a>
+</span>
+<!--span class="number">
+33
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-html-dom-事件" title="JavaScript HTML DOM 事件">JavaScript HTML DOM 事件</a>
+</span>
+<!--span class="number">
+34
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-eventlistener" title="JavaScript EventListener">JavaScript EventListener</a>
+</span>
+<!--span class="number">
+35
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-html-dom元素(节点)" title="JavaScript HTML DOM元素(节点)">JavaScript HTML DOM元素(节点)</a>
+</span>
+<!--span class="number">
+36
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript对象" title="JavaScript对象">JavaScript对象</a>
+</span>
+<!--span class="number">
+37
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-number对象" title="JavaScript Number对象">JavaScript Number对象</a>
+</span>
+<!--span class="number">
+38
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-字符串(string)对象" title="JavaScript 字符串(String)对象">JavaScript 字符串(String)对象</a>
+</span>
+<!--span class="number">
+39
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-日期(date)对象" title="JavaScript 日期(Date)对象">JavaScript 日期(Date)对象</a>
+</span>
+<!--span class="number">
+40
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-数组(array)对象" title="JavaScript 数组(Array)对象">JavaScript 数组(Array)对象</a>
+</span>
+<!--span class="number">
+41
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-布尔(boolean)对象" title="JavaScript 布尔(Boolean)对象">JavaScript 布尔(Boolean)对象</a>
+</span>
+<!--span class="number">
+42
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-算数(math)对象" title="JavaScript 算数(Math)对象">JavaScript 算数(Math)对象</a>
+</span>
+<!--span class="number">
+43
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-regexp对象" title="JavaScript RegExp对象">JavaScript RegExp对象</a>
+</span>
+<!--span class="number">
+44
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-window-浏览器对象模型" title="JavaScript Window-浏览器对象模型">JavaScript Window-浏览器对象模型</a>
+</span>
+<!--span class="number">
+45
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-window-screen" title="JavaScript Window Screen">JavaScript Window Screen</a>
+</span>
+<!--span class="number">
+46
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-window-location" title="JavaScript Window Location">JavaScript Window Location</a>
+</span>
+<!--span class="number">
+47
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-window-history" title="JavaScript Window History">JavaScript Window History</a>
+</span>
+<!--span class="number">
+48
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-window-navigator" title="JavaScript Window Navigator">JavaScript Window Navigator</a>
+</span>
+<!--span class="number">
+49
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-弹窗" title="JavaScript 弹窗">JavaScript 弹窗</a>
+</span>
+<!--span class="number">
+50
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-计时事件" title="JavaScript 计时事件">JavaScript 计时事件</a>
+</span>
+<!--span class="number">
+51
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-cookies" title="JavaScript Cookies">JavaScript Cookies</a>
+</span>
+<!--span class="number">
+52
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-库" title="JavaScript 库">JavaScript 库</a>
+</span>
+<!--span class="number">
+53
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-测试jquery" title="JavaScript 测试jQuery">JavaScript 测试jQuery</a>
+</span>
+<!--span class="number">
+54
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-测试prototype" title="JavaScript 测试Prototype">JavaScript 测试Prototype</a>
+</span>
+<!--span class="number">
+55
+</span-->
+</li>
+<li><span class="title">
+<a href="#javascript-实例" title="javaScript 实例">javaScript 实例</a>
+</span>
+<!--span class="number">
+56
+</span-->
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+
+</ul>
+<p></p><h1 id="javascript笔记"><a name="javascript笔记" href="#javascript笔记"></a>JavaScript笔记</h1><p>JavaScript是Web的编程语言。<br>Web开发必学3门语言:</p><ol>
+<li>HTML定义网页内容、结构；</li><li>CSS描述了网页的布局、样式；</li><li>JavaScript定义网页的行为。</li></ol><hr class="page"><h5 id="javascript-简介"><a name="javascript-简介" href="#javascript-简介"></a>JavaScript 简介</h5><p>JavaScript是一种轻量级的编程语言；<br>JavaScript是可插入HTML页面的编程代码；<br>JavaScript插入HTML页面后，可有所有的现代浏览器执行。</p><p><em>JavaScript直接写入HTML输出流:</em></p><pre><code data-origin="<pre><code>document.write(&quot;&amp;lt;h1&amp;gt;这是一个标题&amp;lt;/h1&amp;gt;&quot;);
+document.write(&quot;&amp;lt;p&amp;gt;这是一个段落&amp;lt;/p&amp;gt;&quot;);
+</code></pre>">document.write("&lt;h1&gt;这是一个标题&lt;/h1&gt;");
+document.write("&lt;p&gt;这是一个段落&lt;/p&gt;");
+</code></pre><p><strong>您只能在HTML输出中使用document.write，如果您在文档加载后使用该方法，会覆盖整个文档。</strong><br><em>JavaScript对事件的反应</em></p><pre><code data-origin="<pre><code>&amp;lt;button type=&quot;button&quot; onclick=&quot;alert(&quot;欢迎!&quot;)&quot;&amp;gt;按钮&amp;lt;/button&amp;gt;
+</code></pre>">&lt;button type="button" onclick="alert("欢迎!")"&gt;按钮&lt;/button&gt;
+</code></pre><p><em>JavaScript改变HTML内容</em></p><pre><code data-origin="<pre><code>&amp;lt;script&amp;gt;
+    function myFunction()
+    {
+        x=document.getElementById(&quot;demo&quot;);    //找到元素
+        x.innerHTML=&quot;Hello JavaScript&quot;    //改变内容
+    }
+&amp;lt;/script&amp;gt;
+</code></pre>">&lt;script&gt;
+    function myFunction()
+    {
+        x=document.getElementById("demo");    //找到元素
+        x.innerHTML="Hello JavaScript"    //改变内容
+    }
+&lt;/script&gt;
+</code></pre><p><strong>document.getElementById()是由HTML DOM中定义的，DOM(Document Object Model)(文档对象模型)是用于访问HTML元素的正式W3C标准</strong><br><em>JavaScript改变HTML图像</em></p><pre><code data-origin="<pre><code>&amp;lt;script&amp;gt;
+    function changeImage()
+    {
+        element=document.getElementById(&quot;myimage&quot;)
+        if(element.src.match(&quot;bulbon&quot;))
+        {
+            element.src=&quot;/images/pic_bulboff.gif&quot;;
+        }
+        else
+        {
+            element.src=&quot;/images/pic_bulbon.gif&quot;;
+        }
+    }
+&amp;lt;/script&amp;gt;
+&amp;lt;img id=&quot;myimage&quot; onclick=&quot;changeImage()&quot; src=&quot;/images/pic_bulboff.gif&quot; width=&quot;100&quot; height=&quot;180&quot; /&amp;gt;
+</code></pre>">&lt;script&gt;
+    function changeImage()
+    {
+        element=document.getElementById("myimage")
+        if(element.src.match("bulbon"))
+        {
+            element.src="/images/pic_bulboff.gif";
+        }
+        else
+        {
+            element.src="/images/pic_bulbon.gif";
+        }
+    }
+&lt;/script&gt;
+&lt;img id="myimage" onclick="changeImage()" src="/images/pic_bulboff.gif" width="100" height="180" /&gt;
+</code></pre><p><em>JavaScript改变HTML样式</em><br>本质上就是改变HTML元素的属性</p><pre><code data-origin="<pre><code>x=document.getElementById(&quot;demo&quot;);
+x.style.color=&quot;#ff0000&quot;;
+</code></pre>">x=document.getElementById("demo");
+x.style.color="#ff0000";
+</code></pre><p><em>JavaScript:验证输入</em></p><pre><code data-origin="<pre><code>&amp;lt;script&amp;gt;
+function myFunction()
+{
+    var x=document.getElementById(&quot;demo&quot;).value;
+    if(x==&quot;&quot;||isNaN(x))
+    {
+        alert(&quot;不是数字&quot;);
+    }
+}
+&amp;lt;/script&amp;gt;
+&amp;lt;button type=&quot;button&quot; onclick=&quot;myFunction()&quot;&amp;gt;点击这里&amp;lt;/button&amp;gt;
+</code></pre>">&lt;script&gt;
+function myFunction()
+{
+    var x=document.getElementById("demo").value;
+    if(x==""||isNaN(x))
+    {
+        alert("不是数字");
+    }
+}
+&lt;/script&gt;
+&lt;button type="button" onclick="myFunction()"&gt;点击这里&lt;/button&gt;
+</code></pre><hr class="underscore"><h5 id="javascript-用法"><a name="javascript-用法" href="#javascript-用法"></a>JavaScript 用法</h5><p>HTML中的脚本必须位于<code>&lt;script&gt;</code>与<code>&lt;/script&gt;</code>标签之间。脚本可被放置在<code>&lt;body&gt;</code>和<code>&lt;head&gt;</code>部分中。<br><em><code>&lt;script&gt;</code>标签</em><br><strong>一些老旧的实例可能会在<code>&lt;script&gt;</code>标签中使用type=”text/javascript”。现在已经不必这样做了。JavaScript是所有现代浏览器以及HTML5中的默认脚本语言</strong><br><em><code>&lt;body&gt;</code>中的JavaScript</em><br><em>JavaScript函数和事件</em><br>通常的做法是把函数放入<code>&lt;head&gt;</code>部分或者页面底部，这样就可以把它们安置到同一处位置，不会干扰页面的内容。<br><em>外部的JavaScript</em><br>可以把脚本保存到外部文件中，外部文件通常包含被多个网页使用的代码。<br>外部JavaScript文件的文件扩展名是.js。<br>如需使用外部文件，请在<code>&lt;script&gt;</code>标签的”src”属性中设置该.js文件，如:</p><pre><code data-origin="<pre><code>&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+    &amp;lt;body&amp;gt;
+        &amp;lt;script src=&quot;myScript.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+</code></pre>">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;body&gt;
+        &lt;script src="myScript.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><hr class="underscore"><h5 id="javascript-输出"><a name="javascript-输出" href="#javascript-输出"></a>JavaScript 输出</h5><p>JavaScript没有任何打印或者输出的函数。<br>在HTML中，JavaScript通常用于操作HTML元素。<br><em>操作HTML元素</em></p><pre><code data-origin="<pre><code>document.getElementById(id)方法获取元素，通过innerHTML来获取或插入元素内容。
+</code></pre>">document.getElementById(id)方法获取元素，通过innerHTML来获取或插入元素内容。
+</code></pre><p><em>写到HTML文档</em></p><pre><code data-origin="<pre><code>document.write()
+</code></pre>">document.write()
+</code></pre><p><em>写到控制台</em></p><pre><code data-origin="<pre><code>console.log()
+</code></pre>">console.log()
+</code></pre><p>浏览器中使用F12启用调试模式，在调试窗口中点击”Console”菜单。</p><h5 id="javascript-语法"><a name="javascript-语法" href="#javascript-语法"></a>JavaScript 语法</h5><p><em>JavaScript字面量</em><br>数字(Number)字面量<br>3.14<br>1001<br>123e5<br><em>字符串(String)字面量</em><br>可以使用单引号或双引号<br>“John Doe”<br>‘John Doe’<br><em>表达式字面量</em><br>5 + 6<br>5 * 10<br><em>数组(Array)字面量</em><br>[40,100,1,5,25,10]<br><em>对象(Object)字面量</em><br>{firstName:”John”,lastName=”Doe”,age:50,eyeColor:”blue”}<br><em>函数(Function)字面量</em></p><pre><code data-origin="<pre><code>function myFunction(a,b)
+{
+    return a*b;
+}
+</code></pre>">function myFunction(a,b)
+{
+    return a*b;
+}
+</code></pre><p><em>JavaScript变量</em><br>使用关键字<code>var</code>来定义变量，使用等号来为变量赋值。</p><pre><code data-origin="<pre><code>var x, length
+x = 5
+length = 6
+</code></pre>">var x, length
+x = 5
+length = 6
+</code></pre><p><em>JavaScript操作符</em><br>算术运算符 (5+6)<em>10<br>赋值运算符  x = 5<br>位运算符、条件、比较、逻辑运算符
+</em>JavaScript语句*<br>语句用分号分隔(可选)</p><pre><code data-origin="<pre><code>x = 5 + 6;
+</code></pre>">x = 5 + 6;
+</code></pre><p><em>JavaScript关键字</em><br>必须以字母、下划线、美元符开始。<br><em>JavaScript注释</em></p><pre><code data-origin="<pre><code>//我不会执行
+</code></pre>">//我不会执行
+</code></pre><p><em>JavaScript数据类型</em><br>5+”value”=”5value”<br><strong>JavaScript对大小写敏感</strong><br><em>JavaScript字符集</em><br>JavaScript使用Unicode字符集。</p><h5 id="javascript-语句"><a name="javascript-语句" href="#javascript-语句"></a>JavaScript 语句</h5><p>可以用反斜杠对代码行进行换行，如</p><pre><code data-origin="<pre><code>document.write(&quot;你好 \
+世界!&quot;);
+</code></pre>">document.write("你好 \
+世界!");
+</code></pre><p>不过，不能像这样折行:</p><pre><code data-origin="<pre><code>document.write \
+(&quot;你好世界!&quot;);
+</code></pre>">document.write \
+("你好世界!");
+</code></pre><h5 id="javascript-注释"><a name="javascript-注释" href="#javascript-注释"></a>JavaScript 注释</h5><p>单行注释://<br>多行注释:/* */</p><h5 id="javascript-变量"><a name="javascript-变量" href="#javascript-变量"></a>JavaScript 变量</h5><p>无值的变量,undefined</p><pre><code data-origin="<pre><code>var carname;
+</code></pre>">var carname;
+</code></pre><p>carname的值为undefined。</p><p>重新声明变量，值不会丢失。</p><pre><code data-origin="<pre><code>var carname=&quot;Volvo&quot;;
+var carname;
+</code></pre>">var carname="Volvo";
+var carname;
+</code></pre><p>carname的值仍然是”Volvo”。</p><h5 id="javascript-数据类型"><a name="javascript-数据类型" href="#javascript-数据类型"></a>JavaScript 数据类型</h5><p>布尔<br>true false<br>对象属性两种寻址方式:</p><pre><code data-origin="<pre><code>name=person.lastname;
+name=person[&quot;lastname&quot;];
+</code></pre>">name=person.lastname;
+name=person["lastname"];
+</code></pre><p>Undefined和Null<br>Undefined表示变量不含有值。<br>可以通过将变量的值设置为null来清空变量。<br>声明变量类型:<br>当声明新变量时，可以使用关键字<code>new</code>来声明其类型:</p><pre><code data-origin="<pre><code>var carname=new String;
+var x = new Number;
+var y = new Boolean;
+var cars = new Array;
+var person = new Object;
+</code></pre>">var carname=new String;
+var x = new Number;
+var y = new Boolean;
+var cars = new Array;
+var person = new Object;
+</code></pre><h5 id="javascript-对象"><a name="javascript-对象" href="#javascript-对象"></a>JavaScript 对象</h5><p>如果访问person对象的fullName属性，它将作为一个定义函数的字符串返回。<br>函数属性作为一个属性\方法访问。</p><h5 id="javascript-函数"><a name="javascript-函数" href="#javascript-函数"></a>JavaScript 函数</h5><p>如果你把值赋给一个尚未声明的变量，该变量将被自动作为全局变量声明，即使它在函数内执行。<br>如</p><pre><code data-origin="<pre><code>carname=&quot;Volvo&quot;;
+</code></pre>">carname="Volvo";
+</code></pre><h5 id="javascript-作用域"><a name="javascript-作用域" href="#javascript-作用域"></a>JavaScript 作用域</h5><p><em>JavaScript局部作用域:</em><br>变量在函数内声明<br><em>JavaScript全局变量</em></p><ul>
+<li>在函数外部声明；</li><li>如果你的变量没有声明，它将自动成为全局变量.</li></ul><p>HTML中的全局变量<br>在HTML中，全局变量是window对象，所有数据变量都属于window对象。<br>eg:</p><pre><code data-origin="<pre><code>&amp;lt;script&amp;gt;
+    myFunction();
+    document.getElementById(&quot;demo&quot;).innerHTML=&quot;I can display&quot; + window.carName;
+    function myFunction()
+    {
+        carName=&quot;Volvo&quot;;
+    }
+&amp;lt;/script&amp;gt;
+</code></pre>">&lt;script&gt;
+    myFunction();
+    document.getElementById("demo").innerHTML="I can display" + window.carName;
+    function myFunction()
+    {
+        carName="Volvo";
+    }
+&lt;/script&gt;
+</code></pre><h5 id="javascript-事件"><a name="javascript-事件" href="#javascript-事件"></a>JavaScript 事件</h5><p>HTML事件是发生在HTML元素上的事情。<br>可以是浏览器行为，也可以是用户行为。<br>如:</p><ul>
+<li>HTML页面完成加载</li><li>HTML input字段改变时</li><li>HTML按钮被点击<br>在事件触发时，JavaScript可以执行一些代码。<br>HTML元素中可以添加事件属性:</li></ul><pre><code data-origin="<pre><code>&amp;lt;some-HTML-element some-event=&quot;some JavaScript&quot;&amp;gt;
+如:
+&amp;lt;button onclick='getElementById(&quot;demo&quot;).innerHTML=Date()'&amp;gt;The time is ?&amp;lt;/button&amp;gt;
+</code></pre>">&lt;some-HTML-element some-event="some JavaScript"&gt;
+如:
+&lt;button onclick='getElementById("demo").innerHTML=Date()'&gt;The time is ?&lt;/button&gt;
+</code></pre><p>代码修改自身元素的内容:<br>使用this关键字</p><pre><code data-origin="<pre><code>&amp;lt;button onclick=&quot;this.innerHTML=Date()&quot;&amp;gt;The time is ?&amp;lt;/button&amp;gt;
+</code></pre>">&lt;button onclick="this.innerHTML=Date()"&gt;The time is ?&lt;/button&gt;
+</code></pre><p>JavaScript代码通常几行，常通过事件属性来调用。</p><p><strong>常见的HTML事件</strong><br>onchange    HTML元素改变<br>onclick        HTML元素被点击<br>onmouseover    用户在一个HTML元素上移动鼠标<br>onmouseout    用户从一个HTML元素上移开鼠标<br>onkeydown    用户按下键盘按键<br>onload        浏览器已完成页面的加载</p><h5 id="javascript-字符串"><a name="javascript-字符串" href="#javascript-字符串"></a>JavaScript 字符串</h5><p>可以通过索引位置来访问字符串中的每个字符</p><pre><code data-origin="<pre><code>var character = carname[7];
+</code></pre>">var character = carname[7];
+</code></pre><p>引号转义<br><em>字符串长度</em><br>内置属性length<br>eg:</p><pre><code data-origin="<pre><code>var text = &quot;ABCDEFG&quot;;
+var sln = text.length;
+</code></pre>">var text = "ABCDEFG";
+var sln = text.length;
+</code></pre><p>字符串可以是对象</p><pre><code data-origin="<pre><code>var x = &quot;John&quot;;
+var y = new String(&quot;John&quot;);
+typeof x // 返回String
+typeof y // 返回Object
+x===y //false
+</code></pre>">var x = "John";
+var y = new String("John");
+typeof x // 返回String
+typeof y // 返回Object
+x===y //false
+</code></pre><p>尽量不要创建string对象，它会拖慢执行速度，并可能产生其他副作用。<br>===为绝对相等，即数据类型和值都必须相等。<br>属性:<br>construtor    返回创建字符串属性的函数<br>length        返回字符串的长度<br>prototype    允许您向对象添加属性和方法<br>方法:<br>charAt()    返回指定索引位置的字符<br>charCodeAt()    返回指定索引位置字符的Unicode值<br>concat()    连接两个或多个字符串，返回连接的字符串<br>fromCharCode()    将字符转换为Unicode值<br>indexOf()    返回字符串中检索指定字符第一次出现的位置<br>lastIndexOf()    返回字符串中检索指定字符最后一次出现的位置<br>localeCompare()    用本地特定的顺序来比较两个字符串<br>match()    找到一个或多个正则表达式的匹配<br>replace()    替换与正则表达式匹配的字串<br>search()    检索与正则表达式相匹配的值<br>slice()        提取字符串的片段，并在新的字符串中返回被提取的部分<br>split()        把字符串分割为子字符串数组<br>substr()    从起始索引号提取字符串中指定数目的字符<br>substring()    提取字符串中两个指定的索引号之间的字符<br>toLocaleLowerCase()    根据主机的语言环境把字符串转换为小写，只有几种语言(如土耳其语)具有地方特有的大小写映射<br>toLocaleUpperCase()    转换为大写<br>toLowerCase()    把字符串转换为小写<br>toString()    返回字符串对象值<br>toUpperCase()    把字符串转换为大写<br>trim()        移除字符串首尾空白<br>valueOf()    返回某个字符串对象的原始值</p><h5 id="javascript-运算符"><a name="javascript-运算符" href="#javascript-运算符"></a>JavaScript 运算符</h5><p>字符串连接符: +<br>== 等于</p><h5 id="javascript-if..else语句"><a name="javascript-if..else语句" href="#javascript-if..else语句"></a>JavaScript If..Else语句</h5><pre><code data-origin="<pre><code>var time = new Date().getHours();
+var r = Math.random();
+</code></pre>">var time = new Date().getHours();
+var r = Math.random();
+</code></pre><h5 id="javascript-switch语句"><a name="javascript-switch语句" href="#javascript-switch语句"></a>JavaScript switch语句</h5><p>与C语言类似</p><h5 id="javascript-for循环"><a name="javascript-for循环" href="#javascript-for循环"></a>JavaScript for循环</h5><p>for/in循环<br>循环遍历对象的属性</p><pre><code data-origin="<pre><code>var person={fname:&quot;John&quot;,lname:&quot;Doe&quot;,age:25};
+
+for(x in person)    //迭代的是key
+{
+    txt = txt + person[x];
+}
+</code></pre>">var person={fname:"John",lname:"Doe",age:25};
+
+for(x in person)    //迭代的是key
+{
+    txt = txt + person[x];
+}
+</code></pre><h5 id="javascript-while循环"><a name="javascript-while循环" href="#javascript-while循环"></a>JavaScript while循环</h5><p>undefined也属于false</p><h5 id="javascript-break和continue语句"><a name="javascript-break和continue语句" href="#javascript-break和continue语句"></a>JavaScript break和continue语句</h5><p><em>JavaScript标签</em></p><pre><code data-origin="<pre><code>label:
+statements;
+
+break labelname;
+continue labelname;
+</code></pre>">label:
+statements;
+
+break labelname;
+continue labelname;
+</code></pre><h5 id="javascript-typeof,null和undefined"><a name="javascript-typeof,null和undefined" href="#javascript-typeof,null和undefined"></a>JavaScript typeof,null和undefined</h5><p><em>typeof</em><br>检测变量的数据类型</p><pre><code data-origin="<pre><code>typeof &quot;John&quot;    //返回string
+typeof 3.14        //返回number
+typeof false    //返回boolean
+typeof [1,2,3,4]//返回object
+typeof {name:'John',age:34}
+                //返回object
+</code></pre>">typeof "John"    //返回string
+typeof 3.14        //返回number
+typeof false    //返回boolean
+typeof [1,2,3,4]//返回object
+typeof {name:'John',age:34}
+                //返回object
+</code></pre><p><strong>注意:数组是一种特殊的对象类型,因此typeof array返回object.</strong></p><p><em>Null</em><br>只有一个值的特殊类型,表示一个空对象引用.</p><pre><code data-origin="<pre><code>typeof null    //返回object
+</code></pre>">typeof null    //返回object
+</code></pre><p>设置为null值来清空对象</p><pre><code data-origin="<pre><code>typeof undefined    //返回undefined
+</code></pre>">typeof undefined    //返回undefined
+</code></pre><p>可以设置undefined来清空对象</p><p><em>Undefined</em><br>表示没有设置值</p><p><em>Undefined和Null的区别</em></p><pre><code data-origin="<pre><code>typeof undefined // undefined
+typeof null    //object
+null === undefined //false
+null == undefined  //true
+</code></pre>">typeof undefined // undefined
+typeof null    //object
+null === undefined //false
+null == undefined  //true
+</code></pre><h5 id="javascript-类型转换"><a name="javascript-类型转换" href="#javascript-类型转换"></a>JavaScript 类型转换</h5><p>Number()转换为数字<br>String()转换为字符串<br>Boolean()转换为布尔值<br><em>JavaScript中数据类型</em></p><ol>
+<li>string</li><li>number</li><li>boolean</li><li>object</li><li>function</li></ol><p>对象类型:</p><ol>
+<li>Object</li><li>Date</li><li>Array</li></ol><p>2个不包含任何值的数据类型:</p><ol>
+<li>null</li><li>undefined</li></ol><pre><code data-origin="<pre><code>tyoeof NaN;    //返回number
+</code></pre>">tyoeof NaN;    //返回number
+</code></pre><p><em>constructor属性</em><br>返回所有JavaScript变量的构造函数</p><pre><code data-origin="<pre><code>&quot;John&quot;.constructor    //返回function String() {[native code]}
+</code></pre>">"John".constructor    //返回function String() {[native code]}
+</code></pre><p>通过constructor属性来查看变量是否为数组(包含字符串”Array”)</p><pre><code data-origin="<pre><code>function isArray(myArray)
+{
+    return myArray.constructor.toString().indexOf(&quot;Array&quot;)&amp;gt;-1;
+}
+function isDate(myDate)
+{
+    return myDate.constructor.toString().indexOf(&quot;Date&quot;)&amp;gt;-1;
+}
+</code></pre>">function isArray(myArray)
+{
+    return myArray.constructor.toString().indexOf("Array")&gt;-1;
+}
+function isDate(myDate)
+{
+    return myDate.constructor.toString().indexOf("Date")&gt;-1;
+}
+</code></pre><p><em>JavaScript类型转换</em><br>将数字/布尔值/日期转换为字符串<br>String(123)<br>(123).toString()</p><hr class="underscore"><p>String(false)<br>false.toString()</p><hr class="underscore"><p>String(Date())<br>Date().toString()</p><hr class="underscore"><p>均可<br>Number方法<br>toExponential()    把对象的值转换为指数计数法<br>toFixed()        把数字转换为字符串,结果的小数点后有指定位数的数字<br>toPrecision()    把数字格式化为指定的长度</p><p>Date方法<br>getDate()    从Date对象返回一个月中的某一天(1~31)<br>getDay()    从Date对象返回一周中的某一天(0~6)<br>getFullYear()    从Date对象以四位数字返回年份<br>getHours()    返回Date对象的小时(0~23)<br>getMilliseconds()    返回Date对象的毫秒(0~999)<br>getMinutes()    返回Date对象的分钟(0~59)<br>getMonth()        从Date对象返回月份(0~11)<br>getSeconds()    返回Date对象的秒数(0~59)<br>getTime()    返回1970年1月1日至今的毫秒数</p><p>将字符串转换为数字<br>Number()<br>字符串包含数字会被转换为数字<br>空字符串转换为0<br>其他字符串会转换为NaN<br>parseFloat()    解析一个字符串,并返回一个浮点数<br>parseInt()    解析一个字符串,并返回一个整数<br>一元运算符 +<br>可以将变量转换为数字</p><pre><code data-origin="<pre><code>var y=&quot;5&quot;;
+var x=+y;    //x是一个数字
+</code></pre>">var y="5";
+var x=+y;    //x是一个数字
+</code></pre><p>如果变量不能转换,仍然是数字,但值为NaN.</p><p>布尔值转换为数字</p><pre><code data-origin="<pre><code>Number(true)    //返回1
+Number(false)    //返回0
+</code></pre>">Number(true)    //返回1
+Number(false)    //返回0
+</code></pre><p>日期转换为数字</p><pre><code data-origin="<pre><code>d = new Date();
+Number(d);
+d.getTime()
+</code></pre>">d = new Date();
+Number(d);
+d.getTime()
+</code></pre><p>二者等价.</p><p>自动类型转换<br>自动转换为字符串<br>当尝试输出一个对象或变量时,JavaScript会自动调用变量的<code>toString()</code>方法.</p><h5 id="javascript正则表达式"><a name="javascript正则表达式" href="#javascript正则表达式"></a>JavaScript正则表达式</h5><p>Regular Expression(regex|regexp|RE)<br><em>语法:</em></p><pre><code data-origin="<pre><code>/pattern/modifiers
+</code></pre>">/pattern/modifiers
+</code></pre><p><em>字符串方法:</em><br>search() 检索与正则表达式匹配的子字符串,并返回字串的起始位置<br>replace() 用于在字符串中用一些字符替换另一些字符,或替换一个与正则表达式匹配的子串</p><pre><code data-origin="<pre><code>//search()方法使用正则表达式
+var str=&quot;Visit W3cschool&quot;;
+var n = str.search(/w3cschool/i);
+//search()方法使用字符串
+var m = str.search(&quot;w3cschool&quot;);
+
+//replace()方法使用正则表达式
+var str = &quot;Visit Microsoft&quot;;
+var res = str.replace(/microsoft/i,&quot;w3cschool&quot;);
+//replace()方法使用字符串
+var ret = str.replace(&quot;Microsoft&quot;,&quot;w3cschool&quot;);
+</code></pre>">//search()方法使用正则表达式
+var str="Visit W3cschool";
+var n = str.search(/w3cschool/i);
+//search()方法使用字符串
+var m = str.search("w3cschool");
+
+//replace()方法使用正则表达式
+var str = "Visit Microsoft";
+var res = str.replace(/microsoft/i,"w3cschool");
+//replace()方法使用字符串
+var ret = str.replace("Microsoft","w3cschool");
+</code></pre><p><em>正则表达式修饰符</em><br>i    执行对大小写不敏感的匹配<br>g    执行全局匹配(查找所有匹配而非在找到第一个匹配后停止)<br>m    执行多行匹配<br><em>正则表达式模式</em><br>[abc] 查找方括号之间的任何字符<br>[0-9] 查找任何从0至9的数字<br>(x|y) 查找任何以|分隔的选项<br><em>元字符</em><br>\d 查找数字<br>\s 查找空白字符<br>\b 匹配单词边界<br>\uxxxx 查找以16进制数xxxx规定的Unicode字符<br><em>量词</em><br>n+    匹配任何包含至少一个n的字符串<br>n*    匹配任何包含0个或多个n的字符串<br>n?    匹配任何包含0个或1个n的字符串</p><p><em>使用RegExp对象</em><br>RegExp是一个预定义了属性和方法的正则表达式对象.<br><strong>使用test()</strong><br>正则表达式方法,检测一个字符串是否包含某个模式,如果有子串匹配返回true,否则false.</p><pre><code data-origin="<pre><code>var patt = /e/;
+patt.test(&quot;The best thing in life is free&quot;);
+因为包含'e',所以返回true.
+可以合并为一行:
+/e/.test(&quot;The best....&quot;);
+</code></pre>">var patt = /e/;
+patt.test("The best thing in life is free");
+因为包含'e',所以返回true.
+可以合并为一行:
+/e/.test("The best....");
+</code></pre><p><em>使用exec()</em><br>检索字符串中的正则表达式的匹配<br>返回一个数组,其中存放匹配的结果,否则返回null.</p><pre><code data-origin="<pre><code>/e/.exec(&quot;The best thing in life is free&quot;);
+返回[e]
+</code></pre>">/e/.exec("The best thing in life is free");
+返回[e]
+</code></pre><h5 id="javascript错误"><a name="javascript错误" href="#javascript错误"></a>JavaScript错误</h5><pre><code data-origin="<pre><code>try
+{
+    //在这里运行代码
+}
+catch(err)
+{
+    //在这里处理错误
+}
+</code></pre>">try
+{
+    //在这里运行代码
+}
+catch(err)
+{
+    //在这里处理错误
+}
+</code></pre><p>throw语句</p><pre><code data-origin="<pre><code>throw exception
+</code></pre>">throw exception
+</code></pre><p>异常可以是JavaScript字符串 数字 逻辑值或对象.</p><pre><code data-origin="<pre><code>&amp;lt;script&amp;gt;
+    function myFunction()
+    {
+        try
+        {
+            var x = document.getElementById(&quot;demo&quot;).value;
+            if(x==&quot;&quot;) throw &quot;empty&quot;;
+            if(isNaN(x)) throw &quot;not a number&quot;;
+            if(x&amp;gt;10) throw &quot;too high&quot;;
+            if(x&amp;lt;5) throw &quot;too low&quot;;
+        }
+        catch(err)
+        {
+            var y = document.getElementById(&quot;mess&quot;);
+            y.innerHTML=&quot;Error:&quot;+err+&quot;.&quot;;
+        }
+
+    }
+&amp;lt;/script&amp;gt;
+&amp;lt;h1&amp;gt;My First JavaScript&amp;lt;/h1&amp;gt;
+&amp;lt;p&amp;gt;Please input a number between 5 and 10;&amp;lt;/p&amp;gt;
+&amp;lt;input id=&quot;demo&quot; type=&quot;text&quot;&amp;gt;
+&amp;lt;button type=&quot;button&quot; onclick=&quot;myFunction()&quot;&amp;gt;Test Input&amp;lt;/button&amp;gt;
+&amp;lt;p id=&quot;mess&quot;&amp;gt;&amp;lt;/p&amp;gt;
+</code></pre>">&lt;script&gt;
+    function myFunction()
+    {
+        try
+        {
+            var x = document.getElementById("demo").value;
+            if(x=="") throw "empty";
+            if(isNaN(x)) throw "not a number";
+            if(x&gt;10) throw "too high";
+            if(x&lt;5) throw "too low";
+        }
+        catch(err)
+        {
+            var y = document.getElementById("mess");
+            y.innerHTML="Error:"+err+".";
+        }
+
+    }
+&lt;/script&gt;
+&lt;h1&gt;My First JavaScript&lt;/h1&gt;
+&lt;p&gt;Please input a number between 5 and 10;&lt;/p&gt;
+&lt;input id="demo" type="text"&gt;
+&lt;button type="button" onclick="myFunction()"&gt;Test Input&lt;/button&gt;
+&lt;p id="mess"&gt;&lt;/p&gt;
+</code></pre><h5 id="javascript调试"><a name="javascript调试" href="#javascript调试"></a>JavaScript调试</h5><p>浏览器启用调试工具一般是按下F12键,并在调试菜单中选择”Console”.<br><em>console.log()方法</em><br><em>设置断点</em><br> debugger关键字<br> 这个关键字与在调试工具中设置断点的效果是一样的.</p><pre><code data-origin="<pre><code>var x = 15 * 5;
+debugger;    //将在这里停止执行
+document.getElementById(&quot;demo&quot;).innerHTML=x;
+</code></pre>">var x = 15 * 5;
+debugger;    //将在这里停止执行
+document.getElementById("demo").innerHTML=x;
+</code></pre><p>火狐浏览器 Firebug插件可用于调试.</p><h5 id="javascript表单验证"><a name="javascript表单验证" href="#javascript表单验证"></a>JavaScript表单验证</h5><p>必填项目</p><pre><code data-origin="<pre><code>function validateForm()
+{
+    var x = document.forms[&quot;myForm&quot;][&quot;fname&quot;].value;
+    if(x==null||x==&quot;&quot;)
+    {
+        alert(&quot;First name must be filled out!&quot;);
+    }
+    return false;
+}
+&amp;lt;form name=&quot;myForm&quot; action=&quot;demo_form.asp&quot; onsubmit=&quot;return validateForm()&quot; method=&quot;post&quot;&amp;gt;
+    First name:
+    &amp;lt;input type=&quot;text&quot; name=&quot;fname&quot;&amp;gt;
+    &amp;lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&amp;gt;
+&amp;lt;/form&amp;gt;
+</code></pre>">function validateForm()
+{
+    var x = document.forms["myForm"]["fname"].value;
+    if(x==null||x=="")
+    {
+        alert("First name must be filled out!");
+    }
+    return false;
+}
+&lt;form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post"&gt;
+    First name:
+    &lt;input type="text" name="fname"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+</code></pre><h5 id="javascript-json"><a name="javascript-json" href="#javascript-json"></a>JavaScript JSON</h5><p>JSON是用于存储和传输数据的格式.<br>JSON通常用于服务端向网页传递数据.<br>JSON</p><ul>
+<li>JSON(JavaScript Object Notation)</li><li>JSON是一种轻量级的数据交换格式</li><li>JSON是独立的语言</li><li>JSON易于理解</li></ul><pre><code data-origin="<pre><code>{
+    &quot;employees&quot;:
+    [
+    {&quot;firstName&quot;:&quot;John&quot;,&quot;lastName&quot;:&quot;Doe&quot;},
+    {&quot;firstName&quot;:&quot;Anna&quot;,&quot;lastName&quot;:&quot;Smith&quot;},
+    {&quot;firstName&quot;:&quot;Peter&quot;,&quot;lastName&quot;:&quot;Jones&quot;}
+    ]
+}
+</code></pre>">{
+    "employees":
+    [
+    {"firstName":"John","lastName":"Doe"},
+    {"firstName":"Anna","lastName":"Smith"},
+    {"firstName":"Peter","lastName":"Jones"}
+    ]
+}
+</code></pre><p><em>JSON格式化后转为JavaScript对象</em><br>JSON格式在语法上与创建JavaScript对象代码是相同的<br><em>JSON语法规则</em></p><ul>
+<li>数据为键/值对</li><li>数据由逗号分隔</li><li>大括号保存对象</li><li>方括号保存数组</li></ul><p><em>JSON字符串转换为JavaScript对象</em><br>使用JavaScript内置函数JSON.parse()将JSON字符串转换为JavaScript对象</p><p>JSON.parse()    用于将一个JSON字符串转换为JavaScript对象<br>JSON.stringify()    用于将JavaScript值转换为JSON字符串</p><h5 id="javascript-void"><a name="javascript-void" href="#javascript-void"></a>JavaScript void</h5><p><em>javascript:void(0)含义</em><br>void关键字指定要计算一个表达式但是不返回值</p><pre><code data-origin="<pre><code>&amp;lt;head&amp;gt;
+&amp;lt;script type=&quot;text/javascript&quot;&amp;gt;
+&amp;lt;!--
+void func()
+javascript:void func()
+
+或者
+
+void(func())
+javascript:void(func())
+//--&amp;gt;
+&amp;lt;/script&amp;gt;
+&amp;lt;/head&amp;gt;
+</code></pre>">&lt;head&gt;
+&lt;script type="text/javascript"&gt;
+&lt;!--
+void func()
+javascript:void func()
+
+或者
+
+void(func())
+javascript:void(func())
+//--&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+</code></pre><p>href=”#”与href=”javascript:void(0)”的区别:<br>#包含了一个位置信息,默认的锚是#top,也就是网页的上端.<br>而javascript:void(0),仅仅表示一个死链接.</p><h5 id="javascript-函数定义"><a name="javascript-函数定义" href="#javascript-函数定义"></a>JavaScript 函数定义</h5><p>函数声明</p><pre><code data-origin="<pre><code>function functionName(parameters)
+{
+    //执行的代码
+}
+</code></pre>">function functionName(parameters)
+{
+    //执行的代码
+}
+</code></pre><p>函数表达式</p><pre><code data-origin="<pre><code>var x = function(a,b){return a*b};
+//匿名函数
+</code></pre>">var x = function(a,b){return a*b};
+//匿名函数
+</code></pre><p>Function()构造函数</p><pre><code data-origin="<pre><code>var myFunction = new Function(&quot;a&quot;,&quot;b&quot;,&quot;return a*b&quot;);
+</code></pre>">var myFunction = new Function("a","b","return a*b");
+</code></pre><p>函数提升(Hoisting)<br>提升是JavaScript默认将当前作用域提升到前面的行为,应用在变量的声明与函数的声明.<br>因此,函数可以在声明之前调用.<br>使用表达式定义函数时无法提升.<br>自调用函数</p><pre><code data-origin="<pre><code>(function()
+{
+    var x = &quot;hello!!&quot;;
+})();
+//匿名自我调用的函数
+</code></pre>">(function()
+{
+    var x = "hello!!";
+})();
+//匿名自我调用的函数
+</code></pre><p>函数是对象<br>typeof 函数 是 “function”<br>但是JavaScript函数描述为一个对象更加准确.<br>JavaScript函数有<strong>属性</strong>和<strong>方法</strong>.<br>如arguments.length 属性返回函数调用过程中接收到的实际参数个数.<br>toString()方法将函数作为一个字符串返回.<br>该字符串的值就是函数在源代码中的声明字符串.</p><h5 id="javascript函数参数"><a name="javascript函数参数" href="#javascript函数参数"></a>JavaScript函数参数</h5><p>JavaScript函数对参数的值不进行任何检查.<br>对参数类型 数目都没有检测<br>默认参数,如果缺少参数,会默认设置为undefined</p><pre><code data-origin="<pre><code>function myFunction(x,y)
+{
+    if(y === undefined)
+        y = 0;
+}
+或者
+function myFunction(x,y)
+{
+    y = y || 0;
+}
+</code></pre>">function myFunction(x,y)
+{
+    if(y === undefined)
+        y = 0;
+}
+或者
+function myFunction(x,y)
+{
+    y = y || 0;
+}
+</code></pre><p>如果传入了过多的参数,将无法引用,只能通过arguments对象来调用.<br>Arguments对象<br>实际参数数组</p><h5 id="javascript函数调用"><a name="javascript函数调用" href="#javascript函数调用"></a>JavaScript函数调用</h5><p>this关键字<br>一般而言,this指向函数执行时的当前对象,不能修改其值.<br>全局函数属于window对象.<br>this指向浏览器窗口(window对象)<br>函数作为对象方法调用,会使得this的值成为对象本身.<br><em>使用构造函数调用函数</em></p><pre><code data-origin="<pre><code>//构造函数
+function myFunction(arg1,arg2)
+{
+    this.firstName = arg1;
+    this.lastName = arg2;
+}
+
+//This creates a new object
+var x = new myFunction(&quot;John&quot;,&quot;Doe&quot;);
+x.firstName;    //返回&quot;John&quot;
+</code></pre>">//构造函数
+function myFunction(arg1,arg2)
+{
+    this.firstName = arg1;
+    this.lastName = arg2;
+}
+
+//This creates a new object
+var x = new myFunction("John","Doe");
+x.firstName;    //返回"John"
+</code></pre><p>构造函数的调用会创建一个新的对象,新对象会继承构造函数的属性和方法.<br>构造函数中this关键字没有任何的值<br>this的值在函数调用时实例化对象(new object)时创建<br><em>作为函数方法调用函数</em><br>在JS中,函数是对象,函数也有自己的属性和方法.<br>call() apply() 可用于调用函数<br>两个方法的第一个参数是对象本身</p><pre><code data-origin="<pre><code>function myFunction(a,b)
+{
+    return a*b;
+}
+myFunction.call(myObject,10,2);
+
+function myFunction(a,b)
+{
+    return a*b;
+}
+myArray = [10,2];
+myFunction.apply(myObject,myArray);    //返回20
+</code></pre>">function myFunction(a,b)
+{
+    return a*b;
+}
+myFunction.call(myObject,10,2);
+
+function myFunction(a,b)
+{
+    return a*b;
+}
+myArray = [10,2];
+myFunction.apply(myObject,myArray);    //返回20
+</code></pre><p>区别在于第二个参数,apply传入的是一个参数数组,而call则作为call的参数传入(从第二个参数开始).<br>在JS严格模式(strict mode)下,在调用函数时第一个参数会成为this的值,即使该参数不是一个对象.<br>在非严格模式(non-strict mode)下,如果第一个参数的值为null或undefined,它将使用全局对象替代.<br>通过call()或apply()方法你可以设置this的值,且作为已存在对象的新方法调用.</p><h5 id="javascript闭包"><a name="javascript闭包" href="#javascript闭包"></a>JavaScript闭包</h5><p>JavaScript变量可以是局部变量或者全局变量.<br>私有变量可以用到闭包.<br>全局变量和局部变量可以重名,类似C语言.<br><strong>变量声明是如果不使用 var 关键字，那么它就是一个全局变量，即便它在函数内定义.</strong><br><em>JavaScript内嵌函数</em><br>在JS中,所有函数都能访问它们上一层的作用域.</p><pre><code data-origin="<pre><code>function add()
+{
+    var counter = 0;
+    function plus( counter += 1;)
+    plus();
+    return counter;
+}
+</code></pre>">function add()
+{
+    var counter = 0;
+    function plus( counter += 1;)
+    plus();
+    return counter;
+}
+</code></pre><p><em>JavaScript闭包</em></p><pre><code data-origin="<pre><code>var add = (function(){
+    var counter = 0;
+    return function()
+    {
+        return counter+=1;
+    }
+})();
+add();
+add();
+add();
+</code></pre>">var add = (function(){
+    var counter = 0;
+    return function()
+    {
+        return counter+=1;
+    }
+})();
+add();
+add();
+add();
+</code></pre><p><strong>闭包</strong>使得函数拥有私有变量变成可能.<br>计数器受匿名函数的作用域保护,只能通过add方法修改.<br><strong>闭包是可访问上一层函数作用域里变量的函数,即使上一层函数已经关闭.</strong></p><h5 id="javascript-html-dom"><a name="javascript-html-dom" href="#javascript-html-dom"></a>JavaScript HTML DOM</h5><p>DOM(Document Object Model)文档对象模型<br>当网页被加载时,浏览器会创建页面的文档对象模型.<br><strong>HTML DOM树</strong><br><img src="http://www.runoob.com/images/pic_htmltree.gif" alt="DOM"></p><ul>
+<li>JavaScript能够改变页面中所有的HTML元素</li><li>JavaScript能够改变页面中所有的HTML属性</li><li>JavaScript能够改变网页中所有的CSS样式</li><li>JavaScript能够对页面中所有事件做出反应<br><em>查找HTML元素</em></li></ul><ol>
+<li>通过id查找<br>document.getElementById(“intro”);<br>如果未找到该元素,返回null.</li><li>通过标签名查找<br>document.getElementsByTagName(“p”)</li><li>通过类名查找<br>document.getElementsByClassName(“intro”);<br>(IE8及更早IE版本不支持该函数)</li></ol><h5 id="javascript-改变html"><a name="javascript-改变html" href="#javascript-改变html"></a>JavaScript 改变HTML</h5><p><em>改变HTML输出流</em><br>绝对不要在文档加载完成之后使用document.write(),这将覆盖该文档.<br><em>改变HTML内容</em><br>innerHTML<br><em>改变HTML属性</em><br>attribute:</p><pre><code data-origin="<pre><code>document.getElementById(&quot;image&quot;).src=&quot;newpic.jpg&quot;;
+</code></pre>">document.getElementById("image").src="newpic.jpg";
+</code></pre><h5 id="javascript-改变css"><a name="javascript-改变css" href="#javascript-改变css"></a>JavaScript 改变CSS</h5><pre><code data-origin="<pre><code>document.getElementById(id).style.property = new style;
+</code></pre>">document.getElementById(id).style.property = new style;
+</code></pre><p>设置文本可见性:</p><pre><code data-origin="<pre><code>document.getElementById(&quot;p1&quot;).style.visibility=&quot;hidden&quot;;
+document.getElementById(&quot;p1&quot;).style.visibility=&quot;visible&quot;;
+</code></pre>">document.getElementById("p1").style.visibility="hidden";
+document.getElementById("p1").style.visibility="visible";
+</code></pre><h5 id="javascript-html-dom-事件"><a name="javascript-html-dom-事件" href="#javascript-html-dom-事件"></a>JavaScript HTML DOM 事件</h5><p><em>对事件做出反应</em><br>如需在某个事件发生时执行JS代码,我们需要向一个HTML事件属性添加JS代码.<br><code>onclick=javaScript</code><br><em>HTML事件属性</em><br>onload:进入页面时,可用于检测访问者的浏览器类型和浏览器版本,并基于这些信息来加载网页的正确版本.<br>onunload:离开页面时,和onload事件用于处理cookie.<br>onchange:改变输入字段内容时<br>onmouseover和onmouseout:<br>鼠标移至HTML元素上方或者移出元素时触发函数.<br>onmousedown onmouseup onclick:<br>点击鼠标      释放鼠标   完成点击<br>onfocus: 获得焦点</p><h5 id="javascript-eventlistener"><a name="javascript-eventlistener" href="#javascript-eventlistener"></a>JavaScript EventListener</h5><p><em>addEventListener()方法</em></p><pre><code data-origin="<pre><code>document.getElementById(&quot;myBtn&quot;).addEventListener(&quot;click&quot;,displayDate);
+</code></pre>">document.getElementById("myBtn").addEventListener("click",displayDate);
+</code></pre><p>addEventListener()方法用于向指定元素添加事件句柄,不会覆盖已有的事件句柄.<br>可以向一个元素添加多个事件句柄<br>可以向同个元素添加多个同类型的事件句柄,如两个”click”事件.<br>可以向任何DOM对象添加事件监听,不仅仅是HTML元素,如window对象.<br>addEventListener()方法可以更简单的控制事件(冒泡与捕获).<br>可以将JavaScript从HTML标记中分离出来,可读性更强.<br>移除事件监听:removeEventListener()<br><em>语法:</em><br>element.addEventListener(event,function,useCapture);</p><ul>
+<li>第一个参数是事件的类型(click,mousedown)</li><li>第二个参数是事件触发后调用的函数</li><li>第三个参数是个布尔值,用于描述事件是冒泡还是捕获,该参数可选.</li></ul><p><strong>事件名称去掉”on”前缀即可.</strong></p><p>addEventListener()方法允许你在HTML DOM对象添加事件监听,HTML DOM对象如:HTML元素 HTML文档 window对象 或者 其他支出的事件对象如 xmlHttpRequest对象.</p><pre><code data-origin="<pre><code>window.addEventListener(&quot;resize&quot;,function()
+{
+    document.getElementById(&quot;demo&quot;).innerHTML = Math.random();
+})
+</code></pre>">window.addEventListener("resize",function()
+{
+    document.getElementById("demo").innerHTML = Math.random();
+})
+</code></pre><p><em>传递参数</em><br>当传递参数值时,使用匿名函数调用带参数的函数.</p><pre><code data-origin="<pre><code>element.addEvventListener(&quot;click&quot;,function(){myFunction(p1,p2);});
+</code></pre>">element.addEvventListener("click",function(){myFunction(p1,p2);});
+</code></pre><p><em>事件冒泡或事件捕获</em><br>事件传递有两种方式: 冒泡和捕获<br>事件传递定义了元素事件触发的顺序,如果把<code>&lt;p&gt;</code>放到<code>&lt;div&gt;</code>元素中,点击<code>&lt;p&gt;</code>元素,哪个元素的”click”事件先被触发呢?<br>冒泡:内部元素的事件先被触发 false<br>捕获:外部元素的事件先被触发 true<br>扩浏览器解决方案:</p><pre><code data-origin="<pre><code>var x = document.getElementById(&quot;myBtn&quot;);
+//所有主流浏览器,除了IE8及更早版本
+if(x.addEventListener)
+{
+    x.addEventListener(&quot;click&quot;,myFunction);
+}
+else if(x.attachEvent)//IE8及更早版本
+{
+    x.attachEvent(&quot;onlick&quot;,myFunction);
+}
+</code></pre>">var x = document.getElementById("myBtn");
+//所有主流浏览器,除了IE8及更早版本
+if(x.addEventListener)
+{
+    x.addEventListener("click",myFunction);
+}
+else if(x.attachEvent)//IE8及更早版本
+{
+    x.attachEvent("onlick",myFunction);
+}
+</code></pre><h5 id="javascript-html-dom元素(节点)"><a name="javascript-html-dom元素(节点)" href="#javascript-html-dom元素(节点)"></a>JavaScript HTML DOM元素(节点)</h5><p><em>创建新的HTML元素</em><br>首先创建该元素,然后向一个已存在的元素追加该元素.</p><pre><code data-origin="<pre><code>&amp;lt;div id=&quot;div1&quot;&amp;gt;
+    &amp;lt;p id=&quot;p1&quot;&amp;gt;This is a paragraph.&amp;lt;/p&amp;gt;
+    &amp;lt;p id=&quot;p2&quot;&amp;gt;This is another paragraph.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script&amp;gt;
+    var para = document.createElement(&quot;p&quot;);
+    var node=document.createTextNode(&quot;This is new&quot;);
+    para.appendChild(node);
+
+    var element = document.getElementById(&quot;div1&quot;);
+    element.appendChild(para);
+&amp;lt;/script&amp;gt;
+</code></pre>">&lt;div id="div1"&gt;
+    &lt;p id="p1"&gt;This is a paragraph.&lt;/p&gt;
+    &lt;p id="p2"&gt;This is another paragraph.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    var para = document.createElement("p");
+    var node=document.createTextNode("This is new");
+    para.appendChild(node);
+
+    var element = document.getElementById("div1");
+    element.appendChild(para);
+&lt;/script&gt;
+</code></pre><p><em>删除已有的HTML元素</em></p><pre><code data-origin="<pre><code>&amp;lt;div id=&quot;div1&quot;&amp;gt;
+    &amp;lt;p id=&quot;p1&quot;&amp;gt;This is a paragraph.&amp;lt;/p&amp;gt;
+    &amp;lt;p id=&quot;p2&quot;&amp;gt;This is another paragraph.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;script&amp;gt;
+    var parent = document.getElementById(&quot;div1&quot;);
+    var child = document.getElementById(&quot;p1&quot;);
+    parent.removeChild(child);
+&amp;lt;/script&amp;gt;
+</code></pre>">&lt;div id="div1"&gt;
+    &lt;p id="p1"&gt;This is a paragraph.&lt;/p&gt;
+    &lt;p id="p2"&gt;This is another paragraph.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    var parent = document.getElementById("div1");
+    var child = document.getElementById("p1");
+    parent.removeChild(child);
+&lt;/script&gt;
+</code></pre><p>常见的解决方案,找到希望删除的子元素,然后使用其parentNode属性来找到父元素:</p><pre><code data-origin="<pre><code>var child = document.getElementById(&quot;p1&quot;);
+child.parentNode.removeChild(child);
+</code></pre>">var child = document.getElementById("p1");
+child.parentNode.removeChild(child);
+</code></pre><hr class="page"><h5 id="javascript对象"><a name="javascript对象" href="#javascript对象"></a>JavaScript对象</h5><p>访问对象的属性:<br>objectName.propertyName<br>访问对象的方法:<br>objectName.methodName()<br>创建JavaScript对象:</p><ul>
+<li>定义并创建对象的实例</li><li>使用函数来定义对象,然后创建新的对象实例</li></ul><p>eg:</p><pre><code data-origin="<pre><code>function person(firstName,lastName,age,eyeColor)
+{
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.eyeColor = eyeColor;
+}
+var myFather = new person(&quot;John&quot;,&quot;Doe&quot;,50,&quot;blue&quot;);
+</code></pre>">function person(firstName,lastName,age,eyeColor)
+{
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.eyeColor = eyeColor;
+}
+var myFather = new person("John","Doe",50,"blue");
+</code></pre><p>在JavaScript中,this通常指向我们正在执行的函数本身,或者是指向该函数所属的对象(运行时).<br><em>JavaScript类:</em><br>JavaScript是面向对象的语言,但JavaScript不使用类.<br>JavaScript基于prototype,而不是基于class.<br><em>for…in循环</em><br>循环遍历对象的属性</p><pre><code data-origin="<pre><code>for(variable in object)
+{
+    //code to be executed here
+}
+</code></pre>">for(variable in object)
+{
+    //code to be executed here
+}
+</code></pre><h5 id="javascript-number对象"><a name="javascript-number对象" href="#javascript-number对象"></a>JavaScript Number对象</h5><p>所有JS数字均为64位<br>不分整型还是浮点型,所有数字都是浮点型.<br>精度:整数最多为15位 小数的最大位数是17.</p><p>八进制: 前缀0<br>十六进制:前缀0x<br>使用toString()方法输出16进制 8进制 2进制<br>eg:</p><pre><code data-origin="<pre><code>var myNumber = 128;
+myNumber.toString(16);//returns 80
+myNumber.toString(8)://returns 200
+myNumber.toString(2);//returns 10000000
+</code></pre>">var myNumber = 128;
+myNumber.toString(16);//returns 80
+myNumber.toString(8)://returns 200
+myNumber.toString(2);//returns 10000000
+</code></pre><p>无穷大(Infinity)<br>Infinity -Infinity<br>非数字值(NaN)<br>使用全局函数<code>isNaN()</code>来判断是否为NaN值.<br><em>数字可以是数字或者对象</em></p><pre><code data-origin="<pre><code>var x = 123;
+var y = new Number(123);
+typeof(x);    //returns Number
+typeof(y);    //returns Object
+</code></pre>">var x = 123;
+var y = new Number(123);
+typeof(x);    //returns Number
+typeof(y);    //returns Object
+</code></pre><p>数字属性:</p><ul>
+<li>MAX_VALUE</li><li>MIN_VALUE</li><li>NEGATIVE_INFINITY</li><li>POSITIVE_INFINITY</li><li>NaN</li><li>prototype</li><li>construtor<br>数字方法:</li><li>toExponential()</li><li>toFixed()</li><li>toPrecision()</li><li>toString()</li><li>valueOf()</li></ul><h5 id="javascript-字符串(string)对象"><a name="javascript-字符串(string)对象" href="#javascript-字符串(string)对象"></a>JavaScript 字符串(String)对象</h5><p><code>indexOf()</code>定位字符串中某一个指定的字符串首次出现的位置</p><pre><code data-origin="<pre><code>var str=&quot;Hello world!&quot;;
+var n = str.indexOf(&quot;world&quot;);
+</code></pre>">var str="Hello world!";
+var n = str.indexOf("world");
+</code></pre><p>如果没找到返回-1,lastIndexOf()方法在字符串末尾开始查找字符串首次出现的位置.<br><code>match()</code>函数用于定位字符串中特定的子串,如果找到的话,返回该子串.</p><pre><code data-origin="<pre><code>var str = &quot;Hello world!&quot;;
+document.write(str.match(&quot;world&quot;)+&quot;&amp;lt;br/&amp;gt;&quot;);
+document.write(str.match(&quot;World&quot;)+&quot;&amp;lt;br/&amp;gt;&quot;);    //返回null
+document.write(str.match(&quot;world!&quot;));
+</code></pre>">var str = "Hello world!";
+document.write(str.match("world")+"&lt;br/&gt;");
+document.write(str.match("World")+"&lt;br/&gt;");    //返回null
+document.write(str.match("world!"));
+</code></pre><p><code>replace()</code>函数用于在字符串中用某些字符替换另一些字符.</p><pre><code data-origin="<pre><code>str = &quot;Please visit Microsoft!&quot;;
+var n = str.replace(&quot;Microsoft&quot;,&quot;W3cschool&quot;);
+</code></pre>">str = "Please visit Microsoft!";
+var n = str.replace("Microsoft","W3cschool");
+</code></pre><p>大小写转换:<br><code>toUpperCase()</code>和<code>toLowerCase()</code><br>字符串转为数组:<br><code>split()</code></p><pre><code data-origin="<pre><code>txt = &quot;a,b,c,d,e&quot;;
+txt.split(&quot;,&quot;);
+</code></pre>">txt = "a,b,c,d,e";
+txt.split(",");
+</code></pre><h5 id="javascript-日期(date)对象"><a name="javascript-日期(date)对象" href="#javascript-日期(date)对象"></a>JavaScript 日期(Date)对象</h5><pre><code data-origin="<pre><code>var d = new Date();
+document.write(d);
+</code></pre>">var d = new Date();
+document.write(d);
+</code></pre><p><code>getFullYear()</code>获得年份<br><code>getTime()</code>    返回从1970年1月1日至今的毫秒数<br><code>setFullYear()</code>设置具体的日期</p><pre><code data-origin="<pre><code>function myFunction()
+{
+    var d = new Date();
+    d.setFullYear(2020,10,3);//10 is Nov
+    var x = document.getElementById(&quot;demo&quot;);
+    x.innerHTML = d;
+}
+</code></pre>">function myFunction()
+{
+    var d = new Date();
+    d.setFullYear(2020,10,3);//10 is Nov
+    var x = document.getElementById("demo");
+    x.innerHTML = d;
+}
+</code></pre><p><code>toUTCString()</code> 将当前时间转换为UTC时间字符串.</p><p><code>getDay()</code> 返回星期几 0-6<br>在网页上显示一个时钟:</p><pre><code data-origin="<pre><code>function startTime()
+{
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    //add a zero in front of numbers &amp;lt; 10
+    m = checkTime(m);
+    s=checkTime(s);
+    document.getElementById(&quot;txt&quot;).innerHTML=h+&quot;:&quot;+&quot;m&quot;+&quot;:&quot;+s;
+    t = setTimeout(function(){startTime(),500});
+}
+function checkTime(i)
+{
+    if(i&amp;lt;10)
+        i=&quot;0&quot;+i;
+    return i;
+}
+</code></pre>">function startTime()
+{
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    //add a zero in front of numbers &lt; 10
+    m = checkTime(m);
+    s=checkTime(s);
+    document.getElementById("txt").innerHTML=h+":"+"m"+":"+s;
+    t = setTimeout(function(){startTime(),500});
+}
+function checkTime(i)
+{
+    if(i&lt;10)
+        i="0"+i;
+    return i;
+}
+</code></pre><p><strong>setTimeout()方法用于在指定的毫秒数后调用函数或计算表达式.</strong><br>setTimeout(code,millisec)<br>四种方式初始化日期:<br>new Date()    //当前日期和时间<br>new Date(millisec) //返回从1970年1月1日至今的毫秒数<br>new Date(dateString)<br>new Date(year,month,day,hours,minutes,seconds,milliseconds)<br>参数大多可选,不指定的情况下,默认参数是0.<br>eg:</p><pre><code data-origin="<pre><code>var today = new Date();
+var d1 = new Date(&quot;October 13, 1975 11:13:00&quot;);
+var d2 = new Date(79,5,24);
+var d3 = new Date(79,5,24,11,33,0)
+</code></pre>">var today = new Date();
+var d1 = new Date("October 13, 1975 11:13:00");
+var d2 = new Date(79,5,24);
+var d3 = new Date(79,5,24,11,33,0)
+</code></pre><p>将日期对象设置为5天后的日期:</p><pre><code data-origin="<pre><code>var myDate = new Date();
+myDate.setDate(myDate.getDate()+5);
+</code></pre>">var myDate = new Date();
+myDate.setDate(myDate.getDate()+5);
+</code></pre><p>两个日期比较<br>&gt; &lt;</p><h5 id="javascript-数组(array)对象"><a name="javascript-数组(array)对象" href="#javascript-数组(array)对象"></a>JavaScript 数组(Array)对象</h5><p>在一个数组中可以有不同的对象<br>concat()合并两个数组<br>join() 用数组的元素组成字符串<br>pop() 删除数组的最后一个元素<br>push()    数组的末尾添加新的元素<br>reverse()    将数组的元素反转排序<br>shift()    删除数组的第一个元素 返回被删元素<br>unshift() 在数组的开头添加新元素 返回数组个数<br>slice()    从一个数组中选择元素<br>sort() 数组排序</p><pre><code data-origin="<pre><code>var points = [40,100,1,5,25,10];
+points.sort(function(a,b){return a-b};)
+</code></pre>">var points = [40,100,1,5,25,10];
+points.sort(function(a,b){return a-b};)
+</code></pre><p>splice() 在数组的第2位置添加一个元素<br>直接对数组进行修改</p><pre><code data-origin="<pre><code>var fruits = [&quot;Banana&quot;,&quot;Orange&quot;,&quot;Apple&quot;,&quot;Mango&quot;];
+fruits.splice(2,0,&quot;Lemon&quot;,&quot;Kiwi&quot;);
+</code></pre>">var fruits = ["Banana","Orange","Apple","Mango"];
+fruits.splice(2,0,"Lemon","Kiwi");
+</code></pre><p>toString() 转换数组到字符串</p><h5 id="javascript-布尔(boolean)对象"><a name="javascript-布尔(boolean)对象" href="#javascript-布尔(boolean)对象"></a>JavaScript 布尔(Boolean)对象</h5><p>0 is boolean false<br>1 is boolean true<br>An empty string is boolean false<br>null is boolean false<br>NaN is boolean false<br>The string “false” is boolean true<br>如果布尔对象无初始值或者其值为:</p><ul>
+<li>0</li><li>-0</li><li>null</li><li>“”</li><li>false</li><li>undefined</li><li>NaN</li></ul><p>那么该对象的值为false,否则为true.</p><h5 id="javascript-算数(math)对象"><a name="javascript-算数(math)对象" href="#javascript-算数(math)对象"></a>JavaScript 算数(Math)对象</h5><p>Math.round() 四舍五入<br>Math.random() 返回0到1之间的随机数<br>max() min() floor()<br>无需在使用Math对象之前对它进行定义.<br>Math.PI<br>Math.sqrt()<br>常量:<br>Math.E<br>Math.PI<br>Math.SQRT2<br>Math.SQRT1_2<br>Math.Ln2<br>Math.Ln10<br>Math.LOG2E<br>Math.LOG10E</p><h5 id="javascript-regexp对象"><a name="javascript-regexp对象" href="#javascript-regexp对象"></a>JavaScript RegExp对象</h5><pre><code data-origin="<pre><code>var patt = new RegExp(pattern,modifiers);
+或者
+var patt = /pattern/modifiers;
+</code></pre>">var patt = new RegExp(pattern,modifiers);
+或者
+var patt = /pattern/modifiers;
+</code></pre><p>注意,当使用构造函数构造RegExp对象时,需要常规的字符转义规则,如以下等价:</p><pre><code data-origin="<pre><code>var re = new RegExp(&quot;\\w+&quot;);
+var re = /\w+/;
+</code></pre>">var re = new RegExp("\\w+");
+var re = /\w+/;
+</code></pre><p>RegExp修饰符:<br>i 不区分大小写<br>g 全局搜索<br>test()方法搜索字符串指定的值,根据结果返回真或假.<br>exec()方法检索字符串中的指定值,返回值是被找到的值,如果没有发现匹配,则返回null.</p><hr class="page"><h5 id="javascript-window-浏览器对象模型"><a name="javascript-window-浏览器对象模型" href="#javascript-window-浏览器对象模型"></a>JavaScript Window-浏览器对象模型</h5><p>BOM(Browser Object Model)浏览器对象模型尚无正式标准.<br><em>window对象</em><br>表示浏览器窗口,所有JavaScript全局对象 函数 以及变量均自动成为window对象的成员.<br>全局变量是window对象的属性.<br>全局函数是window对象的方法.<br>document也是window对象的属性之一.<br>eg:</p><pre><code data-origin="<pre><code>window.document.getElementById(&quot;header&quot;);
+与
+document.getElementById(&quot;header&quot;);
+相同
+</code></pre>">window.document.getElementById("header");
+与
+document.getElementById("header");
+相同
+</code></pre><p><em>Window尺寸</em><br>有三种方法确定浏览器窗口的尺寸(浏览器的视口,不包括工具栏和滚动条)<br>window.innerHeight -浏览器窗口的内部高度<br>window.innerWidth  -浏览器窗口的内部宽度<br>对于IE8 7 6 5:<br>document.documentElement.clientHeight<br>document.documentElement.clientWidth<br>或者<br>document.body.clientHeight<br>document.body.clientWidth<br>eg:</p><pre><code data-origin="<pre><code>var w = window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth;
+var h = window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight;
+</code></pre>">var w = window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth;
+var h = window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight;
+</code></pre><p>其他window方法:</p><ul>
+<li>window.open()    打开新窗口</li><li>window.close()    关闭当前窗口</li><li>window.moveTo()    移动当前窗口</li><li>window.resizeTo()    调整当前窗口的尺寸</li></ul><h5 id="javascript-window-screen"><a name="javascript-window-screen" href="#javascript-window-screen"></a>JavaScript Window Screen</h5><p>window.screen对象包含有关用户屏幕的信息.<br>window.screen对象在编写时可以不使用window这个前缀.</p><pre><code data-origin="<pre><code>screen.availWidth -可用的屏幕宽度
+screen.availHeight-可用的屏幕高度
+</code></pre>">screen.availWidth -可用的屏幕宽度
+screen.availHeight-可用的屏幕高度
+</code></pre><h5 id="javascript-window-location"><a name="javascript-window-location" href="#javascript-window-location"></a>JavaScript Window Location</h5><p>window.location对象用于获得当前页面的URL,并把浏览器重定向到新的页面.</p><pre><code data-origin="<pre><code>location.hostname //返回web主机的域名
+location.pathname //返回当前页面的路径和文件名
+location.port    //返回web主机的端口(80或443)
+location.protocol    //返回所使用的web协议(http://或https://)
+</code></pre>">location.hostname //返回web主机的域名
+location.pathname //返回当前页面的路径和文件名
+location.port    //返回web主机的端口(80或443)
+location.protocol    //返回所使用的web协议(http://或https://)
+</code></pre><p><em>Window Location Href</em><br>location.href属性返回当前页面的URL<br><em>Window Location Pathname</em><br>location.pathname属性返回URL的路径名<br><em>Window Location Assign</em><br>location.assign()方法加载新的文档</p><pre><code data-origin="<pre><code>function newDoc()
+{
+    window.location.assign(&quot;http://www.w3cschool.cc&quot;);
+}
+</code></pre>">function newDoc()
+{
+    window.location.assign("http://www.w3cschool.cc");
+}
+</code></pre><h5 id="javascript-window-history"><a name="javascript-window-history" href="#javascript-window-history"></a>JavaScript Window History</h5><p>window.history对象包含浏览器的历史<br>为了保护用户隐私,对JavaScript访问该对象的方法做出了限制.<br>history.back()    与在浏览器中点击后退按钮相同<br>history.forward()    与在浏览器中点击前进按钮相同</p><h5 id="javascript-window-navigator"><a name="javascript-window-navigator" href="#javascript-window-navigator"></a>JavaScript Window Navigator</h5><p>window.navigator对象包含有关访问者浏览器的信息.</p><pre><code data-origin="<pre><code>&amp;lt;div id=&quot;example&quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;script&amp;gt;
+    txt = &quot;&amp;lt;p&amp;gt;Browser CodeName: &quot;+navigator.appCodeName+&quot;&amp;lt;/p&amp;gt;&quot;;
+    txt += &quot;&amp;lt;p&amp;gt;Browser Name: &quot;+navigator.appName+&quot;&amp;lt;/p&amp;gt;&quot;;
+    txt += &quot;&amp;lt;p&amp;gt;Browser Version: &quot;+navigator.appVersion+&quot;&amp;lt;/p&amp;gt;&quot;;
+    txt += &quot;&amp;lt;p&amp;gt;Cookies Enabled: &quot;+navigator.cookieEnabled+&quot;&amp;lt;/p&amp;gt;&quot;;
+    txt += &quot;&amp;lt;p&amp;gt;Platform: &quot;+navigator.platform+&quot;&amp;lt;/p&amp;gt;&quot;;
+    txt += &quot;&amp;lt;p&amp;gt;User-agent header:&quot;+navigator.userAgent+&quot;&amp;lt;/p&amp;gt;&quot;;
+    txt += &quot;&amp;lt;p&amp;gt;User-agent language: &quot;+navigator.systemLanguage+&quot;&amp;lt;/p&amp;gt;&quot;;
+    document.getElementById(&quot;example&quot;).innerHTML=txt;
+&amp;lt;/script&amp;gt;
+</code></pre>">&lt;div id="example"&gt;&lt;/div&gt;
+&lt;script&gt;
+    txt = "&lt;p&gt;Browser CodeName: "+navigator.appCodeName+"&lt;/p&gt;";
+    txt += "&lt;p&gt;Browser Name: "+navigator.appName+"&lt;/p&gt;";
+    txt += "&lt;p&gt;Browser Version: "+navigator.appVersion+"&lt;/p&gt;";
+    txt += "&lt;p&gt;Cookies Enabled: "+navigator.cookieEnabled+"&lt;/p&gt;";
+    txt += "&lt;p&gt;Platform: "+navigator.platform+"&lt;/p&gt;";
+    txt += "&lt;p&gt;User-agent header:"+navigator.userAgent+"&lt;/p&gt;";
+    txt += "&lt;p&gt;User-agent language: "+navigator.systemLanguage+"&lt;/p&gt;";
+    document.getElementById("example").innerHTML=txt;
+&lt;/script&gt;
+</code></pre><p><strong>注意:来自navigator的信息具有误导性,不应该被用于检测浏览器版本,因为</strong><br><strong>1.navigator数据可被浏览器使用者更改</strong><br><strong>2.一些浏览器对测试站点会识别错误</strong><br><strong>3.浏览器无法报告晚于浏览器发布的新操作系统</strong></p><p><em>浏览器检测</em><br>由于不同的浏览器支持不同的对象,您可以使用对象来检测浏览器,例如,由于只有Opera支持属性<code>window.opera</code>,您可以据此识别出Opera.<br>eg:</p><pre><code data-origin="<pre><code>if(window.opera)
+{
+    //some code...
+}
+</code></pre>">if(window.opera)
+{
+    //some code...
+}
+</code></pre><h5 id="javascript-弹窗"><a name="javascript-弹窗" href="#javascript-弹窗"></a>JavaScript 弹窗</h5><p>三种消息框:警告框、确认框、提示框。<br><em>警告框</em><br>“确认”</p><pre><code data-origin="<pre><code>window.alert(&quot;warning...&quot;);
+</code></pre>">window.alert("warning...");
+</code></pre><p><em>确认框</em><br>“确认”或者”取消”，分别返回true和false</p><pre><code data-origin="<pre><code>window.confirm(&quot;some text&quot;);
+</code></pre>">window.confirm("some text");
+</code></pre><p><em>提示框</em><br>用户需要输入某个指，然后点击”确定”或者”取消”<br>如果”确认”，返回输入的值<br>如果”取消”，返回null</p><pre><code data-origin="<pre><code>window.prompt(&quot;sometext&quot;,&quot;defaultValue&quot;);
+</code></pre>">window.prompt("sometext","defaultValue");
+</code></pre><p><em>换行</em><br>弹窗使用\n来换行</p><h5 id="javascript-计时事件"><a name="javascript-计时事件" href="#javascript-计时事件"></a>JavaScript 计时事件</h5><p>在一个设定的时间间隔之后来执行代码<br>两个关键方法:</p><ul>
+<li>setInterval()    间隔指定的毫秒数不停地执行指定的代码</li><li>setTimeout()    暂停指定的毫秒数后执行指定的代码</li></ul><p>属于window对象。<br><em>setInterval()</em></p><pre><code data-origin="<pre><code>window.setInterval(&quot;javascript function&quot;,milliseconds);
+</code></pre>">window.setInterval("javascript function",milliseconds);
+</code></pre><p>eg:<br>每3秒弹出”hello”:</p><pre><code data-origin="<pre><code>setInterval(function(){alert(&quot;Hello!&quot;)},3000);
+</code></pre>">setInterval(function(){alert("Hello!")},3000);
+</code></pre><p>clearInterval()方法用于停止setInterval()方法执行的函数代码。</p><pre><code data-origin="<pre><code>window.clearInterval(intervalVaribale)
+</code></pre>">window.clearInterval(intervalVaribale)
+</code></pre><p>为了使用clearInterval()方法，在创建计时方法时必须使用全局变量。<br>eg:</p><pre><code data-origin="<pre><code>var myVar = setInterval(......);
+clearInterval(myVar);
+</code></pre>">var myVar = setInterval(......);
+clearInterval(myVar);
+</code></pre><p><em>setTimeout()方法</em></p><pre><code data-origin="<pre><code>window.setTimeout(&quot;javascript function&quot;,milliseconds);
+</code></pre>">window.setTimeout("javascript function",milliseconds);
+</code></pre><p>会返回某个值，如果希望取消它，通过使用这个变量来指定它。<br>第二个参数指示从当前起多少毫秒后执行第一个参数。</p><p>clearTimeout()方法用于停止执行setTimeout()方法的函数代码。</p><pre><code data-origin="<pre><code>window.clearTimeout(timeoutVariable);
+</code></pre>">window.clearTimeout(timeoutVariable);
+</code></pre><h5 id="javascript-cookies"><a name="javascript-cookies" href="#javascript-cookies"></a>JavaScript Cookies</h5><p>Cookies用于存储web页面的用户信息。<br><em>什么是Cookies?</em><br>Cookies是一些数据，存储于电脑上的文本文件中。<br>当Web服务器向浏览器发送Web页面时，在连接关闭后，服务端不会记录用户的信息。<br>Cookies的作用就是用于解决”如果记录客户端的用户信息”。</p><ul>
+<li>当用户访问web页面时，他的名字可以记录在cookie中</li><li>当用户下一次访问该页面时，可以在cookie中读取用户访问记录<br>Cookies以名/值对的形式存储，如下所示:</li></ul><pre><code data-origin="<pre><code>username=John Doe
+</code></pre>">username=John Doe
+</code></pre><p>当浏览器从服务端上请求web页面时，属于该页面的cookies会被添加到该请求中，服务端通过这种方式来获取用户的信息。</p><p><em>使用JavaScript创建Cookie</em><br>JS可以使用<strong>document.cookie</strong>属性来创建、读取、删除cookies。</p><pre><code data-origin="<pre><code>document.cookie=&quot;username=John Doe&quot;;
+</code></pre>">document.cookie="username=John Doe";
+</code></pre><p>还可以为cookie添加一个过期时间(以UTC或GMT时间)。默认情况下，cookie在浏览器关闭时删除。</p><pre><code data-origin="<pre><code>document.cookie=&quot;username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 GMT&quot;;
+</code></pre>">document.cookie="username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 GMT";
+</code></pre><p>还可以使用path参数告诉浏览器cookie的路径，默认情况下，cookie属于当前页面</p><pre><code data-origin="<pre><code>document.cookie=&quot;username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 GMT;path=/&quot;;
+</code></pre>">document.cookie="username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 GMT;path=/";
+</code></pre><p><em>使用JavaScript读取Cookie</em></p><pre><code data-origin="<pre><code>var x = document.cookie;
+</code></pre>">var x = document.cookie;
+</code></pre><p><strong>document.cookie将以字符串的形式返回所有的Cookies.类型格式:<br>cookie1=value;<br>cookie2=value;<br>cookie3=value;</strong></p><p><em>使用JavaScript修改Cookie</em><br>即覆盖旧的cookie</p><p><em>使用JavaScript删除Cookie</em><br>只需设置expires参数为以前的时间即可</p><pre><code data-origin="<pre><code>document.cookie = &quot;username=;expires=Thu, 01 Jan 1970 00:00:00 GMT&quot;;
+</code></pre>">document.cookie = "username=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+</code></pre><p>注意，当删除时不必指定cookie的值。</p><p><em>Cookie字符串</em><br>document.cookie看起来像一个普通的文本字符串，其实不是。<br>如果需要查找一个指定的cookie值，必须创建一个JS函数在cookie字符串中查找cookie值。<br><em>实例</em><br>设置cookie值的函数:</p><pre><code data-origin="<pre><code>function setCookie(cname,cvalue,exdays)
+{
+    var d = new Date();
+    d.setTime(d.getTime()+(exdays*24*60*60*1000));
+    var expires = &quot;expires=&quot;+d.toGMTString();
+    document.cookie=cname+&quot;=&quot;+cvalue+&quot;;&quot;+expires;
+}
+</code></pre>">function setCookie(cname,cvalue,exdays)
+{
+    var d = new Date();
+    d.setTime(d.getTime()+(exdays*24*60*60*1000));
+    var expires = "expires="+d.toGMTString();
+    document.cookie=cname+"="+cvalue+";"+expires;
+}
+</code></pre><p>获取cookie值的函数:</p><pre><code data-origin="<pre><code>function getCookie(cname)
+{
+    var name = cname + &quot;=&quot;;
+    var ca = document.cookie.split(&quot;;&quot;);
+    for(var i=0;i&amp;lt;ca.length;i++)
+    {
+        var c = ca[i].trim();
+        if(c.indexOf(name)==0)
+            return c.substring(name.length,c.length);
+    }
+    return &quot;&quot;;
+}
+</code></pre>">function getCookie(cname)
+{
+    var name = cname + "=";
+    var ca = document.cookie.split(";");
+    for(var i=0;i&lt;ca.length;i++)
+    {
+        var c = ca[i].trim();
+        if(c.indexOf(name)==0)
+            return c.substring(name.length,c.length);
+    }
+    return "";
+}
+</code></pre><p>检测cookie值的函数:</p><pre><code data-origin="<pre><code>function checkCookie()
+{
+    var username = getCookie(&quot;username&quot;);
+    if(username!=&quot;&quot;)
+    {
+        alert(&quot;Welcome again &quot;+username);
+    }
+    else
+    {
+        username=prompt(&quot;Please enter your name:&quot;,&quot;&quot;);
+        if(username!=&quot;&quot;&amp;amp;&amp;amp;username!=null)
+        {
+            setCookie(&quot;username&quot;,username,365);
+        }
+    }
+}
+</code></pre>">function checkCookie()
+{
+    var username = getCookie("username");
+    if(username!="")
+    {
+        alert("Welcome again "+username);
+    }
+    else
+    {
+        username=prompt("Please enter your name:","");
+        if(username!=""&amp;&amp;username!=null)
+        {
+            setCookie("username",username,365);
+        }
+    }
+}
+</code></pre><p>在页面载入时执行checkCookie()函数</p><pre><code data-origin="<pre><code>&amp;lt;body onload=&quot;checkCookie()&quot;&amp;gt;
+&amp;lt;/body&amp;gt;
+</code></pre>">&lt;body onload="checkCookie()"&gt;
+&lt;/body&gt;
+</code></pre><h5 id="javascript-库"><a name="javascript-库" href="#javascript-库"></a>JavaScript 库</h5><p>jQuery、Prototype、MooTools</p><p><em>JavaScript框架(库)</em><br>JavaScript高级程序设计(特别是对浏览器差异的复杂处理)，通常很困难也很耗时。</p><p><em>jQuery</em><br>jQuery是目前最受欢迎的JavaScript框架。<br>它使用CSS选择器来访问和操作页面上的HTML元素(DOM对象)<br>同时提供companion UI(用户界面)和插件。</p><p><em>Prototype</em><br>提供用于执行常见web任务的简单API<br>Prototype 通过提供类和继承，实现了对 JavaScript 的增强。</p><p><em>MooTools</em><br>也含有一些轻量级的效果和动画函数。</p><p><em>其他框架</em></p><ul>
+<li>YUI(Yahoo!User Interface Framework),涵盖大量函数的大型库，从简单的JS功能到完整的internet widget。</li><li>Ext JS:可定制的widget，用于构建富因特网应用程序(rich Internet applications)</li><li>Dojo:用于DOM操作、事件、widget等的工具包</li><li>script.aculo.us:开源的JavaScript框架，针对可视效果和界面行为</li><li>UIZE:Widget、AJAX、DOM、模板等等。</li></ul><p><em>CDN 内容分发网络</em><br>如果许多不同的网站使用相同的JavaScript框架，那么把框架库存放在一个通用的位置供每个网页分享就变得很有意义。<br>CDN(Content Delivery Network)解决了这个问题，CDN是包含可分享代码库的服务器网络。<br>Google为一系列JavaScript库提供了免费的CDN，包括jQuery、Prototype、MooTools、Dojo、Yahoo!YUI，但是由于GFW(防火长城，Great Firewall of China)屏蔽，所以访问不稳定，建议使用百度静态资源公共库:<br>[<a href="http://cdn.code.baidu.com">http://cdn.code.baidu.com</a>]<br>如果需要使用JavaScript框架，只需要在<code>&lt;script&gt;</code>标签中引用该库即可:</p><pre><code data-origin="<pre><code>&amp;lt;script src=&quot;http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js&quot;&amp;gt;
+&amp;lt;/script&amp;gt;
+</code></pre>">&lt;script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"&gt;
+&lt;/script&gt;
+</code></pre><h5 id="javascript-测试jquery"><a name="javascript-测试jquery" href="#javascript-测试jquery"></a>JavaScript 测试jQuery</h5><p>jQuery允许链接(链式语法)<br>链接(Chaining)是一种在同一对象上执行多个任务的便捷方法</p><h5 id="javascript-测试prototype"><a name="javascript-测试prototype" href="#javascript-测试prototype"></a>JavaScript 测试Prototype</h5><p>与jQuery相同，Prototype允许链式语法。</p><h5 id="javascript-实例"><a name="javascript-实例" href="#javascript-实例"></a>javaScript 实例</h5>
+
+<footer style="position:fixed; font-size:.8em; text-align:right; bottom:0px; margin-left:-25px; height:20px; width:100%;">generated by <a href="http://pad.haroopress.com" target="_blank">haroopad</a></footer>
+</body>
+</html>
